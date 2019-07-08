@@ -1,6 +1,67 @@
 .footer{
     width: 100%;
     height: 300px;
-    border: .5px solid black;
     position: relative;
+    display: inline-flex;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('../../images/footer.jpeg');
+    background-size: cover;
+}
+
+.footer h1{
+    color: white;
+}
+
+.footer-left{
+    display: inline-flex;
+    position: absolute;
+    left: 0%;
+    color: white;
+    bottom: 0px;
+    font-size: 2em;
+    margin: 10px;
+}
+.footer-right{
+    color: white;
+    display: inline-flex;
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
+    font-size: 2em;
+}
+
+.footer-right h1{
+    font-size: .5em;
+    margin-top: 20px;
+}
+
+i{
+    margin: 10px;
+}
+
+.mango{
+    height: 10%;
+    bottom: 0%;
+    margin: 10px;
+    width: 30%;
+    background-image: url('../../images/mangowhite.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    position: absolute;
+    left: 0%;
+    color: white;
+}
+
+.mango p{
+    position: absolute;
+    color: white;
+    left: 10%;
+    top: 0%;
+    margin: 10px;
+
 }
