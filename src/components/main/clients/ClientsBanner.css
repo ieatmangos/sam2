@@ -1,0 +1,24 @@
+.clientsbanner{
+    width: 100%;
+    height: 40vh;
+}
+
+.clientsbanner-h1{
+    font-size: 10vw;
+    font-weight: bold;
+    left: 5%;
+    top: 30%;
+    position: relative;
+    display: inline-flex;
+}
+
+.clientscircle{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    left: 100%;
+    background: #2AFC98; 
+    top: 60%;
+    position: absolute;
+
+}

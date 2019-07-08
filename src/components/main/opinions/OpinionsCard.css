@@ -1,0 +1,20 @@
+.opinionscard-image{
+    width: 100%;
+    background: green;
+    height: 50%;
+}
+
+.opinionscard{
+    height: 30vw;
+  
+    margin: auto!important;
+    padding: 5px;
+}
+
+.opinionscard-image:hover{
+    border-bottom: .5px solid black;
+    transform-origin: right;
+    transition: 1s;
+    transform: scale(1.03)
+
+}

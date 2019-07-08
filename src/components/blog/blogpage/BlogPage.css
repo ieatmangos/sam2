@@ -1,0 +1,35 @@
+.blogpagewrapper{
+
+    position: relative;
+    width: 50%;
+    align-content: center;
+    margin: auto;
+}
+.blogpageimg1{
+    margin-top: 10px;
+    position: relative;
+    background: grey;
+    height: 30vw;
+    width: 100%;
+}
+.articles{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    display: inline-flex;
+}
+
+.articlebox{
+    border: 1px solid black;
+    width: 33%;
+    background: grey;
+    height: 100px;
+    display: block;
+}
+
+.articlebox a{
+    background:transparent;
+    color: green;
+    background-image: transparent;
+}

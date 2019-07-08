@@ -1,0 +1,14 @@
+.teambanner{
+    height: 40vh;
+    border: .5px solid black;
+    background: black;
+}
+
+.teambanner-h1{
+    font-size: 10vw;
+    font-weight: bold;
+    left: 5%;
+    top: 30%;
+    position: relative;
+    color: white;
+}

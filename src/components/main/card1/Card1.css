@@ -1,0 +1,21 @@
+.card1{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.card1-left{
+    align-items: center;
+    padding: 5% 8% 8% 8%;
+    width: 50%;
+    position: relative;
+    text-align: left;
+    height: 40vh;
+   
+}
+.card1-right{
+    width: 100%;
+    background: #2AFC98;
+}

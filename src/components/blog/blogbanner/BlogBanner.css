@@ -1,0 +1,27 @@
+.blogbanner{
+    width: 100%;
+    height: 20vh;
+
+  
+}
+
+.blogbanner-h1{
+    font-size: 10vw;
+    font-weight: bold;
+    left: 5%;
+    top: 5%;
+    position: relative;
+    color: black;
+    display: inline-flex;
+}
+
+.blogbannercircle{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    left: 100%;
+    background: #2AFC98; 
+    top: 60%;
+    position: absolute;
+
+}
