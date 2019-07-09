@@ -19,9 +19,15 @@
     left: 0%;
 }
 
-.bloghead-right h3{
-    margin: 10px;
+.bloghead-right a h3{
+    margin: 8px;
+    font-display: normal;
 }
 .bloghead-left h1{
     margin: 10px 10px 10px 0px;
+}
+
+a{
+    font-display: normal;
+    color: black;
 }

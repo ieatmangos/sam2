@@ -5,7 +5,7 @@
 
 .jumbo-h1 h1{
     position: absolute;
-    top: 5%;
+    top: 1%;
     font-size: 5vw;
     left: 5%;
     
@@ -15,7 +15,7 @@
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    background: #2AFC98; 
+    background: #49c5b6; 
     position: absolute;
     left: 3%;
     top: -.4%;
@@ -25,6 +25,6 @@
     width: 50px;
     position: absolute;
     z-index: 1;
-    top: 8%;
+    top: 5%;
     left: 2.2%;
 }

@@ -6,7 +6,7 @@ import ContactForm from './ContactForm'
 export class Contact extends Component {
     render() {
         return (
-            <div className='contact'>
+            <div className='contact-wrapper'>
                 <ContactBanner />
                 <ContactForm />
 

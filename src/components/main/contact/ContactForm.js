@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
-
+import './ContactForm.css'
 export class ContactForm extends Component {
     render() {
         return (
             <form name="contact" method="post">
                 <input type="hidden" name="form-name" value="contact" />
                 <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
+                    <input type="text" placeholder='name' name="name" />
                 </p>
                 <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
+                    <input type="email" placeholder='email' name="email" />
                 </p>
                 <p>
-                    <label>Message: <textarea name="message"></textarea></label>
+                    <textarea name="message" placeholder='message'></textarea>
                 </p>
                 <p>
                     <button type="submit">Send</button>

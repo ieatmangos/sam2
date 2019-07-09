@@ -8,14 +8,15 @@
 
 .card1-left{
     align-items: center;
-    padding: 5% 8% 8% 8%;
+    padding: 5% 0% 8% 8%;
     width: 50%;
     position: relative;
-    text-align: left;
-    height: 40vh;
+    text-align: right;
+    height: 20vw;
    
 }
 .card1-right{
     width: 100%;
-    background: #2AFC98;
+    background-image: url('../../../images/social2.png');
+    background-size: cover;
 }

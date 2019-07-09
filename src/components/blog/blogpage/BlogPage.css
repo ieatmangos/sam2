@@ -6,7 +6,7 @@
     margin: auto;
 }
 .blogpageimg1{
-    margin-top: 10%;
+    margin-top: 2%;
     position: relative;
     background: grey;
     height: 30vw;
@@ -24,8 +24,9 @@
     border: 1px solid black;
     width: 33%;
     background: grey;
-    height: 100px;
+    height: 20vw;
     display: block;
+    margin-top: 5%;
 }
 
 .articlebox a{

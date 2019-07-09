@@ -1,14 +1,15 @@
 .recentbox{
-    height: 30vw;
-    width: 50%;
+    height: 35vw;
+    width: 40vw;
     display: inline-flex;
     margin: 0px;
     transition: .8s;
     transition-timing-function: ease;
+    text-align: left;
 }
 
 .recentbox-image {
-    background-image: url('../../../images/blue.jpeg');
+    background-image: url('../../../images/Office Leasing.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -16,7 +17,6 @@
     position: relative;
     margin-top: -4px;
     transition-timing-function: ease;
-
 }
 
 .recentbox-text{
@@ -30,7 +30,7 @@
 }
 
 .recentbox:hover .recentbox-image{
-    background: #2DE1FC;
+    background: #fba47e;
     box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
 }
 
@@ -44,7 +44,7 @@
 
 
 .recentbox2-image {
-    background-image: url('../../../images/leaf.jpeg');
+    background-image: url('../../../images/Plae Shoes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -64,7 +64,7 @@
 }
 
 .recentbox:hover .recentbox2-image{
-    background: #2AFC98;
+    background: #986287;
     box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
 }
 
@@ -76,7 +76,7 @@
 
 
 .recentbox3-image {
-    background-image: url('../../../images/yellow.jpeg');
+    background-image: url('../../../images/Luxury Accomodation.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -97,7 +97,7 @@
 }
 
 .recentbox:hover .recentbox3-image{
-    background: #17C26F;
+    background: #93babc;
     box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
 }
 
@@ -105,11 +105,10 @@
     color: white;
     visibility: visible;
 }
-/* #3 */
 
-
+/* #4 */
 .recentbox4-image {
-    background-image: url('../../../images/red.jpeg');
+    background-image: url('../../../images/Luna&Rose Jewelery.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -130,11 +129,203 @@
 }
 
 .recentbox:hover .recentbox4-image{
-    background: #214F4B;
+    background: #e95c5a;
     box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
 }
 
 .recentbox:hover .recentbox4-text{
+    color: white;
+    visibility: visible;
+}
+
+/* #5 */
+.recentbox5-image {
+    background-image: url('../../../images/LL Wedding Hire.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: -4px;
+    transition-timing-function: ease;
+}
+
+.recentbox5-text{
+    position: absolute;
+    color: white;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: 50px;
+    width: 50%;
+    transition-timing-function: ease;
+}
+
+.recentbox:hover .recentbox5-image{
+    background: #c3982e;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.recentbox:hover .recentbox5-text{
+    color: white;
+    visibility: visible;
+}
+
+/* #6 */
+.recentbox6-image {
+    background-image: url('../../../images/Jeffery Construction.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: -4px;
+    transition-timing-function: ease;
+}
+
+.recentbox6-text{
+    position: absolute;
+    color: white;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: 50px;
+    width: 50%;
+    transition-timing-function: ease;
+}
+
+.recentbox:hover .recentbox6-image{
+    background: #fba47e;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.recentbox:hover .recentbox6-text{
+    color: white;
+    visibility: visible;
+}
+
+/* #7 */
+.recentbox7-image {
+    background-image: url('../../../images/Grounded Packaging.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: -4px;
+    transition-timing-function: ease;
+}
+
+.recentbox7-text{
+    position: absolute;
+    color: white;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: 50px;
+    width: 50%;
+    transition-timing-function: ease;
+}
+
+.recentbox:hover .recentbox7-image{
+    background: #986287;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.recentbox:hover .recentbox7-text{
+    color: white;
+    visibility: visible;
+}
+
+/* #8 */
+.recentbox8-image {
+    background-image: url('../../../images/Fenton Building.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: -4px;
+    transition-timing-function: ease;
+}
+
+.recentbox8-text{
+    position: absolute;
+    color: white;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: 50px;
+    width: 50%;
+    transition-timing-function: ease;
+}
+
+.recentbox:hover .recentbox8-image{
+    background: #93babc;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.recentbox:hover .recentbox8-text{
+    color: white;
+    visibility: visible;
+}
+
+/* #9 */
+.recentbox9-image {
+    background-image: url('../../../images/Bird & Kite.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: -4px;
+    transition-timing-function: ease;
+}
+
+.recentbox9-text{
+    position: absolute;
+    color: white;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: 50px;
+    width: 50%;
+    transition-timing-function: ease;
+}
+
+.recentbox:hover .recentbox9-image{
+    background: #e95c5a;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.recentbox:hover .recentbox9-text{
+    color: white;
+    visibility: visible;
+}
+
+/* #10 */
+.recentbox10-image {
+    background-image: url('../../../images/Medical on Miami Medical Centre.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: -4px;
+    transition-timing-function: ease;
+}
+
+.recentbox10-text{
+    position: absolute;
+    color: white;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: 50px;
+    width: 50%;
+    transition-timing-function: ease;
+}
+
+.recentbox:hover .recentbox10-image{
+    background: #c3982e;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+}
+
+.recentbox:hover .recentbox10-text{
     color: white;
     visibility: visible;
 }

@@ -9,15 +9,17 @@
 
 .card2-right{
     align-items: center;
-    padding: 5% 8% 8% 8%;
+    padding: 5% 8% 8% 0%;
     width: 50%;
     position: relative;
-    text-align: right;
-    height: 40vh;
+    text-align: left;
+    height: 20vw;
     right: -25%;
    
 }
 .card2-left{
     width: 100%;
-    background: #2DE1FC;
+    background-image: url('../../../images/social.jpeg');
+    background-size: cover;
+    background-position: center;
 }

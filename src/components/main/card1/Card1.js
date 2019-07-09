@@ -9,7 +9,7 @@ export class Card1 extends Component {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, placeat.</p>
                     <h3>Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
-                <div className='card1-right'>image</div>
+                <div className='card1-right'></div>
             </div>
         )
     }

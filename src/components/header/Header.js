@@ -7,10 +7,10 @@ export class Header extends Component {
                 <div className='head-left'> <h1>header</h1></div>
 
                 <div className='head-right'>
-                    <h3>Work</h3>
-                    <h3>Team</h3>
-                    <h3>Clients</h3>
-                    <h3>Contact</h3>
+                    <a href='#work'><h3>Work</h3></a>
+                    <a href='#team'><h3>Team</h3></a>
+                    <a href='#blog'><h3>Blog</h3></a>
+                    <a href='#contact'> <h3>Contact</h3></a>
                 </div>
 
 

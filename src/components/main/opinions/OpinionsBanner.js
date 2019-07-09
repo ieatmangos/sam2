@@ -19,7 +19,7 @@ const OpinionsBanner = () => {
 
     })
     return (
-        <div className='opinionsbanner' onMouseOver={() => setToggle(true)}>
+        <div className='opinionsbanner' id='blog' onMouseOver={() => setToggle(true)}>
             <div className='opinionsbanner-h1'>Our Opinions<animated.div style={shake} className='opinionsbannercircle'></animated.div></div>
         </div>
     )

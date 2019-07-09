@@ -1,9 +1,13 @@
-.recentboxwrapper{
-    position: relative;
-    width: 100%;
+.recent .recentbox-wrapper{
+  
    
-    display: inline-flex;
- 
-    border: 1px solid black
+    height: auto;
+    width: auto;
+    position: relative;
+    text-align: center;
+   
+  
+
+   
   
 }

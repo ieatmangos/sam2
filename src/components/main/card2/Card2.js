@@ -4,7 +4,7 @@ export class Card2 extends Component {
     render() {
         return (
             <div className='card2'>
-                <div className='card2-left'>image</div>
+                <div className='card2-left'></div>
                 <div className='card2-right'>
                     <h1>Digital</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, placeat.</p>

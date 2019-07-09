@@ -19,7 +19,7 @@ export class Blog extends Component {
             <div>
 
                 <BlogHeader />
-                <BlogBanner />
+                {/* <BlogBanner /> */}
                 <div className='blogpage-wrapper'>
                     <BlogPage info={this.props.info} />
                 </div>
