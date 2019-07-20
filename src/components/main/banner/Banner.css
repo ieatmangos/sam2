@@ -24,3 +24,9 @@
     position: absolute;
 
 }
+
+@media only screen and (max-width:800px) {
+    .banner {
+        height: 20vh;
+    }
+}

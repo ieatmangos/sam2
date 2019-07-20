@@ -329,3 +329,19 @@
     color: white;
     visibility: visible;
 }
+
+@media only screen and (max-width:800px){
+    .recentbox h1 {
+        font-size: 1em;
+        width: 80%;
+    }
+    .recentbox h3 {
+        font-size: .5em;
+    }
+    .recentbox p {
+        font-size: .5em;
+    }
+    .recentbox-text, .recentbox2-text, .recentbox3-text, .recentbox4-text, .recentbox5-text, .recentbox6-text, .recentbox7-text, .recentbox8-text, .recentbox9-text, .recentbox10-text{
+        margin-left: 5px;
+    }
+}

@@ -9,17 +9,61 @@
 
 .card2-right{
     align-items: center;
-    padding: 5% 8% 8% 0%;
-    width: 50%;
+    width: 40vw;
     position: relative;
     text-align: left;
-    height: 20vw;
-    right: -25%;
-   
+    left: 5vw;
+    top: 10vw;
 }
 .card2-left{
-    width: 100%;
+    width: 40vw;
+    height: 30vw;
     background-image: url('../../../images/social.jpeg');
     background-size: cover;
     background-position: center;
+    margin-left: 5vw;
+  
+}
+
+@media only screen and (max-width: 800px){
+
+    .card2{
+        width: 100vw;
+        height: auto;
+        position: relative;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .card2-right{
+        grid-column: 1/4;
+        grid-row-start: 2;
+        align-items: center;
+        width: 90%;
+        position: relative;
+        text-align: center;
+        left: 5%;
+        margin:0px;
+        padding: 0px;
+        top:0px;
+    
+       
+    }
+    .card2-right * {
+        width: 90%;
+       
+    }
+    .card2-left{
+        grid-column: 1/4;
+        grid-row-start: 1;
+        width: 100%;
+        height: 70vw;
+        left: 0px;
+        margin:0px;
+        background-image: url('../../../images/social.jpeg');
+        background-size: cover;
+      
+    }
 }

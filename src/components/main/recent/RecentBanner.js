@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './RecentBanner.css'
 import { useSpring, animated } from 'react-spring'
+import Fade from 'react-reveal'
 
 const RecentBanner = () => {
     const [isToggled, setToggle] = useState(false)
@@ -18,7 +19,7 @@ const RecentBanner = () => {
     })
     return (
         <div className='recentbanner' id='work' onMouseOver={() => setToggle(true)}>
-            <div className='recentbanner-h1'>Our Recent Work<animated.div style={shake} className='recentbannercircle'></animated.div></div>
+            <div className='recentbanner-h1'>Our Recent Work<Fade right><div style={shake} className='recentbannercircle'></div></Fade></div>
         </div>
     )
 }

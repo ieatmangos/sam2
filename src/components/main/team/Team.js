@@ -11,6 +11,7 @@ export class Team extends Component {
                     <TeamCard />
                     <TeamCard />
                     <TeamCard />
+
                 </div>
             </div>
         )

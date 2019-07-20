@@ -12,3 +12,11 @@
     position: relative;
     color: #49c5b6;
 }
+
+@media only screen and (max-width:800px) {
+    .teambanner{
+        width: 100%;
+        height: 20vh;
+      
+    }
+}

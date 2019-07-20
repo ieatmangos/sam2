@@ -22,3 +22,11 @@
     position: absolute;
 
 }
+
+@media only screen and (max-width:800px) {
+    .clientsbanner{
+        width: 100%;
+        height: 20vh;
+      
+    }
+}

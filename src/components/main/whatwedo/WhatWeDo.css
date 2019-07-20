@@ -8,9 +8,31 @@
 
 .whatwedo h1{
     padding: 0px;
-    margin: 0px 0px 0px 2%;
+    margin: 0px 0px 0px 5%;
 }
 .whatwedo h3{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media only screen and (max-width:800px){
+    .whatwedo{
+        width: 95%;
+        display: grid;
+        grid-template-rows: 1fr 2fr 2fr;
+        height: 20vh;
+        left: 5%;
+        position: relative;
+    }
+    .whatwedo h1{
+        padding: 0px;
+        margin: 0px;
+        font-size: 1em;
+    }
+    .whatwedoh3{
+        margin-left: 0px!important;
+        margin-right: 5%;
+        font-size: .5em;
+    }
+    
 }
