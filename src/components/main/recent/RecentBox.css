@@ -3,8 +3,6 @@
     width: 40vw;
     display: inline-flex;
     margin: 0px;
-    transition: .8s;
-    transition-timing-function: ease;
     text-align: left;
 }
 

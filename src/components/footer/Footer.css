@@ -11,6 +11,7 @@
     url('../../images/footer.jpg');
     background-size: cover;
     background-position: center;
+    margin-top:10%;
 }
 
 .footer h1{

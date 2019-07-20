@@ -47,4 +47,11 @@ button{
         border: .5px solid #49c5b6;
         font-size: 1em;
     }
+
+    .input:before{
+        top: -50px;
+        right: -100px;
+        bottom: -50px;
+        left: -100px;
+    }
 }
