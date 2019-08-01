@@ -39,33 +39,12 @@ const Jumbo = () => {
 
     })
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => window.removeEventListener('scroll', handleScroll);
-    // }, []);
-
-    // function handleScroll() {
-    //     const currentScrollPos = window.pageYOffset
-    //     const windowWidth = window.innerWidth
-
-    //     set(currentScrollPos);
-    // }
-
-    // const follow = useSpring({
-    //     from: {
-    //         transform: 'translate3d(0px,0px,0px)',
-    //         position: 'relative',
-
-    //     },
-    //     to: {
-    //         transform: window.innerWidth > 800 ? `translate3d(${scrolled}px,500%,0px)` : `translate3d(${scrolled}px,230%,0px)`,
-    //     }
-    // })
 
 
     return (
         <div className='jumbo'>
-            <div className='jumbo-h1'><h1>Welcome to Boutique Digital. We’re a boutique digital marketing & design agency focused on driving results and solving business problems. We love doing great work with good people.</h1></div>
+            <div className='jumbo-h1'><h1>Welcome to Boutique Digital.</h1>
+                <h1 style={{ marginTop: window.innerWidth > 800 ? '100px' : '40px' }}> We’re a boutique digital marketing & design agency focused on driving results and solving business problems. We love doing great work with good people.</h1></div>
 
             {/* <animated.div className='circle' style={shake} ></animated.div> */}
             {/* <animated.div className='circle' style={follow} ></animated.div> */}

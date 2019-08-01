@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TeamBanner from './TeamBanner';
+import Banner from '../banner/Banner'
 import TeamCard from './TeamCard'
 import './Team.css';
 import Fade from 'react-reveal'
@@ -7,8 +7,8 @@ export class Team extends Component {
     render() {
         return (
             <div>
-                <TeamBanner />
-                <Fade up>
+                <Banner message={'Team'} />
+                <Fade up >
                     <div className='teamcardsection'>
                         <TeamCard />
                         <TeamCard />

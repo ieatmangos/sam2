@@ -5,7 +5,7 @@
 }
 
 .banner-h1{
-    font-size: 8vw;
+    font-size: 6em;
     font-weight: bold;
     left: 5%;
     top: 30%;
@@ -20,7 +20,7 @@
     border-radius: 50%;
     left: 100%;
     background: #49c5b6; 
-    top: 60%;
+    top: 50%;
     position: absolute;
 
 }
@@ -28,5 +28,11 @@
 @media only screen and (max-width:800px) {
     .banner {
         height: 20vh;
+    }
+    .banner-h1{
+        font-size: 2em;
+    }
+    .bannercircle{
+        top: 50%;
     }
 }

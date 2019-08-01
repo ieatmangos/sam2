@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Clients.css'
-import ClientsBanner from './ClientsBanner'
+import Banner from '../banner/Banner'
 import ClientsBox from './ClientsBox'
 
 
@@ -9,7 +9,7 @@ export class Clients extends Component {
     render() {
         return (
             <div>
-                <ClientsBanner />
+                <Banner message={'Our Clients'} />
                 <ClientsBox />
 
             </div>

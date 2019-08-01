@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import RecentBanner from './RecentBanner'
+import Banner from '../banner/Banner'
 import { animated, useSpring } from 'react-spring'
 import Fade from 'react-reveal'
 // import './Recent.css'
@@ -47,7 +47,7 @@ const Recent = () => {
         gridRowEnd: 3,
         gridColumnStart: 1,
         position: 'relative'
-      
+
     }
 
     const rightStyle = {
@@ -58,13 +58,14 @@ const Recent = () => {
         gridRowStart: 2,
         gridRowEnd: 4,
         gridColumnStart: 2
-   
+
     }
     const allText = {
         position: 'absolute',
         paddingTop: '30%',
         paddingLeft: '10%',
         color: 'white',
+        fontSize: window.innerWidth > 800 ? '1em' : '.5em'
     }
     const firstFade = useSpring({
         from: {
@@ -178,7 +179,7 @@ const Recent = () => {
 
     return (
         <div className='recent'>
-            <RecentBanner />
+            <Banner message={'Our Recent Work'} />
             <Fade up cascade>
                 <div style={gridStyle}>
                     <div style={{ ...leftStyle, backgroundImage: `url(${image1})` }} onMouseOver={() => setFirst(true)} onMouseLeave={() => setFirst(false)}>

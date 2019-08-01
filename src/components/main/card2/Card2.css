@@ -42,13 +42,12 @@
         grid-column: 1/4;
         grid-row-start: 2;
         align-items: center;
-        width: 30vw;
+        width: 80%;
         position: relative;
-        text-align: center;
+        text-align: left;
         left: 5%;
-        margin:0px;
-        padding: 0px;
         top:0px;
+
     
        
     }

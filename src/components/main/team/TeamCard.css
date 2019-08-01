@@ -25,12 +25,6 @@
     color: white;
 }
 
-.teamimage:hover{
-    border-bottom: .5px solid black;
-    transform-origin: right;
-    transition: 1s;
-    transform: scale(1.03)
-}
 
 @media only screen and (max-width: 800px){
     .teamcard{

@@ -21,7 +21,7 @@ export class Main extends Component {
         return (
             <div className='main'>
                 <Jumbo />
-                <Banner />
+                <Banner message={'What We Do'} />
                 <Fade up><WhatWeDo /></Fade>
                 <Card1 />
                 <Card2 />

@@ -40,9 +40,9 @@
         grid-column: 1/4;
         grid-row-start: 2;
         align-items: center;
-        width:90%;
+        width:80%;
         position: relative;
-        text-align: center;
+        text-align: left;
         left: 5%;
         top: 0px;
     

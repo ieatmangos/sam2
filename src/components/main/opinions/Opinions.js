@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import OpinionsBanner from './OpinionsBanner'
+import Banner from '../banner/Banner'
 import OpinionsCard from './OpinionsCard'
 import Fade from 'react-reveal'
 import './Opinions.css'
@@ -28,7 +28,7 @@ export class Opinions extends Component {
     render() {
         return (
             <div>
-                <OpinionsBanner />
+                <Banner message={'Our Opinions'} />
                 <Fade up>
                     <div className='opinionscardsection'>
                         <OpinionsCard props={blog1} />

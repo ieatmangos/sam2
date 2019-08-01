@@ -4,7 +4,7 @@ export class Header extends Component {
     render() {
         return (
             <div className='header'>
-                <div className='head-left'> <h1>header</h1></div>
+                <div className='head-left'> <h1>Boutique Digital</h1></div>
 
                 <div className='head-right'>
                     <a href='#work'><h3>Work</h3></a>
