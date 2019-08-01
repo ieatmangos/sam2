@@ -12,7 +12,13 @@ export class ContactForm extends Component {
                     <input type="email" placeholder='email' name="email" />
                 </p>
                 <p>
-                    <textarea name="message" placeholder='message'></textarea>
+                    <input type="text" placeholder='company' name="company" />
+                </p>
+                <p>
+                    <input type="text" placeholder='phone' name="phone" />
+                </p>
+                <p>
+                    <textarea name="message" placeholder='What you need help with'></textarea>
                 </p>
                 <p>
                     <button type="submit">Send</button>

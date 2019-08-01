@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import OpinionsBanner from './OpinionsBanner'
 import OpinionsCard from './OpinionsCard'
-
+import Fade from 'react-reveal'
 import './Opinions.css'
 
 const blog1 = {
@@ -29,11 +29,13 @@ export class Opinions extends Component {
         return (
             <div>
                 <OpinionsBanner />
-                <div className='opinionscardsection'>
-                    <OpinionsCard props={blog1} />
-                    <OpinionsCard props={blog2} />
-                    <OpinionsCard props={blog3} />
-                </div>
+                <Fade up>
+                    <div className='opinionscardsection'>
+                        <OpinionsCard props={blog1} />
+                        <OpinionsCard props={blog2} />
+                        <OpinionsCard props={blog3} />
+                    </div>
+                </Fade>
 
 
 

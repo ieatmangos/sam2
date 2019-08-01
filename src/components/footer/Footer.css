@@ -2,15 +2,9 @@
     width: 100%;
     height: 300px;
     position: relative;
-    display: inline-flex;
+    /* display: inline-flex; */
     background:
-    linear-gradient(
-        rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url('../../images/footer.jpg');
-    background-size: cover;
-    background-position: center;
+    black;
     margin-top:10%;
 }
 
@@ -21,7 +15,7 @@
 .footer-left{
     display: inline-flex;
     position: absolute;
-    left: 0%;
+    left: 2%;
     color: white;
     bottom: 0px;
     font-size: 2em;
@@ -31,7 +25,7 @@
     color: white;
     display: inline-flex;
     position: absolute;
-    right: 0%;
+    right: 2%;
     bottom: 0px;
     font-size: 2em;
 }
@@ -50,23 +44,16 @@ i{
     bottom: 0%;
     margin: 10px;
     width: 30%;
-    background-image: url('../../images/mangowhite.svg');
+    background-image: url('../../images/eatMangosWhite.svg');
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-flex;
     position: absolute;
-    left: 0%;
+    left: 2%;
     color: white;
 }
 
-.mango p{
-    position: absolute;
-    color: white;
-    left: 10%;
-    top: 0%;
-    margin: 10px;
 
-}
 
 @media only screen and (max-width: 800px){
     .footer-right h1{
@@ -77,31 +64,22 @@ i{
         color: white;
         display: inline-flex;
         position: absolute;
-        right: 0%;
+        right: 2%;
         bottom: 0px;
         font-size: 1em;
     }
-    .mango p{
-        position: absolute;
-        color: white;
-        left: 10%;
-        bottom: 0%;
-        /* margin: 10px; */
-        font-size: .2em;
-        width: 100%;
-    
-    }
+  
     .mango{
         height: 6.5%;
         bottom: 0%;
         /* margin: 10px; */
         width: 50%;
-        background-image: url('../../images/mangowhite.svg');
+        background-image: url('../../images/eatMangosWhite.svg');
         background-size: contain;
         background-repeat: no-repeat;
         display: inline-flex;
         position: absolute;
-        left: 0%;
+        left: 2%;
         color: white;
     }
     .footer-left{
@@ -120,13 +98,8 @@ i{
         position: relative;
         display: block;
         background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.7)
-        ),
-        url('../../images/footer.jpg');
-        background-size: cover;
-        background-position: center;
+        black;
+       
     }
     
 }

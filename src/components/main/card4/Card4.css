@@ -1,4 +1,4 @@
-.card2{
+.card4{
     width: 100%;
     height: auto;
     position: relative;
@@ -7,7 +7,7 @@
     
 }
 
-.card2-right{
+.card4-right{
     align-items: center;
     width: 30vw;
     position: relative;
@@ -16,7 +16,7 @@
     top: 5vw;
 
 }
-.card2-left{
+.card4-left{
     width: 40vw;
     height: 30vw;
     background-image: url('../../../images/social.jpeg');
@@ -28,7 +28,7 @@
 
 @media only screen and (max-width: 800px){
 
-    .card2{
+    .card4{
         width: 100vw;
         height: auto;
         position: relative;
@@ -38,7 +38,7 @@
         grid-template-rows: 1fr 1fr;
     }
     
-    .card2-right{
+    .card4-right{
         grid-column: 1/4;
         grid-row-start: 2;
         align-items: center;
@@ -53,7 +53,7 @@
        
     }
  
-    .card2-left{
+    .card4-left{
         grid-column: 1/4;
         grid-row-start: 1;
         width: 100%;

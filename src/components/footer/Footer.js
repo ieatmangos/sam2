@@ -28,13 +28,13 @@ function Footer() {
         from: {
             opacity: 1,
             transform: 'translate3d(0px, 0px, 0px)',
-            height: window.innerWidth > 800 ? '2.5vw' : '8vw',
-            width: window.innerWidth > 800 ? '2.5vw' : '8vw',
+            height: window.innerWidth > 800 ? '2.5vw' : '5vw',
+            width: window.innerWidth > 800 ? '2.5vw' : '5vw',
             borderRadius: '50%',
 
             background: '#49c5b6',
             margin: 'auto',
-            position: 'relative',
+            position: 'absolute',
             top: window.innerWidth > 800 ? '5%' : '40%'
         },
         to: async next => {
@@ -52,26 +52,12 @@ function Footer() {
 
     return (
         <div className='footer' >
-            <div className='footer-center' style={{ position: 'absolute', width: '100vw', top: '30%' }}>
-                <div style={{ width: '80%', textAlign: 'center', margin: 'auto' }}>
-                    {trail.map(({ x, height, ...rest }, index) => (
-                        <animated.div
-                            key={items[index]}
-                            className='trails-text'
-                            style={{ ...rest, transform: x.interpolate(x => `translate3d(${x}px, 0px,0 )`) }}
-                        >
-                            <animated.div style={{ height }}>{items[index]}</animated.div>
-
-                        </animated.div>
-
-                    ))}
-                </div>
-
-
-
+            <div style={{ left: window.innerWidth > 800 ? '48.75%' : '47.5%', width: '50%', textAlign: 'center', position: 'relative', top: '10%' }}><animated.div style={btnstyle} onClick={handleBtn}></animated.div></div>
+            <div style={{ position: 'relative', width: '100%', top: '35%', textAlign: 'center', color: 'white', fontSize: '1.5em' }}>
+                Get In Touch
             </div>
 
-            <animated.div style={btnstyle} onClick={handleBtn}></animated.div>
+
 
 
             <div className='footer-right'>
@@ -82,7 +68,7 @@ function Footer() {
                 <i class="fa fa-twitter"></i>
 
             </div>
-            <div className='mango'><p>Website by Eat Mangos</p></div>
+            <div className='mango'></div>
         </div>
     )
 }
