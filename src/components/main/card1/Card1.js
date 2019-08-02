@@ -8,7 +8,7 @@ export class Card1 extends Component {
                 <Fade left>
                     <div className='card1-left'>
                         <h1>Digital Marketing & Strategy</h1>
-                        <p>We specialise in creating tailored digital marketing strategies & solutions that grow brand awareness, customer acquisition and growth to drive return on investment for you business. Using all of our expertise and experience in marketing strategy, digital marketing and design combined with data analysis, marketing automation and reporting to ensure you're talking to the right audience to return real results.</p>
+                        <p>We specialise in creating tailored digital marketing strategies & solutions that grow brand awareness, customer acquisition and growth to drive return on investment for you business. </p>
                         {/* <h3>L</h3> */}
                     </div>
                 </Fade>

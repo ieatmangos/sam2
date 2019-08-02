@@ -53,7 +53,7 @@ function Footer() {
     return (
         <div className='footer' >
             <div style={{ left: window.innerWidth > 800 ? '48.75%' : '47.5%', width: '50%', textAlign: 'center', position: 'relative', top: '10%' }}><animated.div style={btnstyle} onClick={handleBtn}></animated.div></div>
-            <div style={{ position: 'relative', width: '80%', margin: 'auto', top: '35%', textAlign: 'center', color: 'white', fontSize: '1.5em' }}>
+            <div style={{ position: 'relative', width: '80%', margin: 'auto', top: '50%', textAlign: 'center', color: 'white', fontSize: '1.5em' }}>
                 Get In Touch
             </div>
 

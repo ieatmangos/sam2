@@ -6,5 +6,11 @@
 
 *{
   font-family: 'Archivo', sans-serif;
-  letter-spacing: .05em
+  line-height: 1.5em
+}
+@media only screen and (max-width: 800){
+  *{
+    font-family: 'Archivo', sans-serif;
+    line-height: 1.3em
+  }
 }

@@ -62,10 +62,13 @@ const Recent = () => {
     }
     const allText = {
         position: 'absolute',
-        paddingTop: '30%',
+        // paddingTop: window.innerWidth > 800 ? '30%' : '0%',
         paddingLeft: '10%',
+        paddingRight: '10%',
         color: 'white',
-        fontSize: window.innerWidth > 800 ? '1em' : '.5em'
+        bottom: window.innerWidth > 800 ? '10%' : '0%',
+        fontSize: window.innerWidth > 800 ? '1.5em' : '.5em',
+        lineHeight: window.innerWidth > 800 ? '1.2em' : '.9em'
     }
     const firstFade = useSpring({
         from: {
@@ -186,8 +189,8 @@ const Recent = () => {
                         <animated.div style={{ ...firstFade, background: '#fba47e', }}>
                             <div style={{ ...allText }}>
                                 <h1>Office Leasing</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                {/* <h3>Digital Marketing</h3> */}
+                                <p>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions.</p>
                             </div>
                         </animated.div>
                     </div>
@@ -206,8 +209,9 @@ const Recent = () => {
                         <animated.div style={{ ...thirdFade, background: '#93babc', }}>
                             <div style={{ ...allText }}>
                                 <h1>Luxury Accomodation</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                {/* <h3>Digital Marketing</h3> */}
+                                <p>Paid Social Campaigns. Driving new customer acquisition and increasing online conversions.
+</p>
                             </div>
                         </animated.div>
 
@@ -217,19 +221,23 @@ const Recent = () => {
                         <animated.div style={{ ...fourthFade, background: '#e95c5a', }}>
                             <div style={{ ...allText }}>
                                 <h1>Luna & Rose Jewelery</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                {/* <h3>Digital Marketing</h3> */}
+                                <p>Paid Search & Social Campaigns
+Email Marketing
+Branding & Design
+Search Engine Optimisation
+</p>
                             </div>
                         </animated.div>
                     </div>
                 </div>
                 <div style={gridStyle}>
                     <div style={{ ...leftStyle, backgroundImage: `url(${image5})` }} onMouseOver={() => setFifth(true)} onMouseLeave={() => setFifth(false)}>
-                        <animated.div style={{ ...fifthFade, background: '#fed232', }}>
+                        <animated.div style={{ ...fifthFade, background: '#e5ba30', }}>
                             <div style={{ ...allText }}>
                                 <h1>LL Wedding Hire</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                {/* <h3>Search Engine Optimisation</h3> */}
+                                <p>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions. Search Engine Optimisation</p>
                             </div>
                         </animated.div>
                     </div>
@@ -237,8 +245,8 @@ const Recent = () => {
                         <animated.div style={{ ...sixthFade, background: '#fba47e', }}>
                             <div style={{ ...allText }}>
                                 <h1>Jeffery Construction</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                {/* <h3>Digital Marketing</h3> */}
+                                <p>Paid Search & Social Campaigns. Generating customer leads and increasing website traffic and enquiry. </p>
                             </div>
                         </animated.div>
                     </div>
@@ -248,8 +256,9 @@ const Recent = () => {
                         <animated.div style={{ ...seventhFade, background: '#986287', }}>
                             <div style={{ ...allText }}>
                                 <h1>Grounded Packaging</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                <h3>Search Engine Optimisation
+</h3>
+                                <p>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions.</p>
                             </div>
                         </animated.div>
                     </div>
@@ -258,8 +267,8 @@ const Recent = () => {
                         <animated.div style={{ ...eighthFade, background: '#93babc', }}>
                             <div style={{ ...allText }}>
                                 <h1>Fenton Building</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                <h3>Search Engine Optimisation</h3>
+                                <p>Paid Search & Social Campaigns. Generating customer leads and increasing website traffic and enquiry. </p>
                             </div>
                         </animated.div>
                     </div>
@@ -269,17 +278,17 @@ const Recent = () => {
                         <animated.div style={{ ...ninthFade, background: '#e95c5a', }}>
                             <div style={{ ...allText }}>
                                 <h1>Bird & Kite</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                {/* <h3>Digital Marketing</h3> */}
+                                <p>Paid Search & Social Campaigns. Email Marketing</p>
                             </div>
                         </animated.div>
                     </div>
                     <div style={{ ...rightStyle, backgroundImage: `url(${image10})` }} onMouseOver={() => setTenth(true)} onMouseLeave={() => setTenth(false)}>
-                        <animated.div style={{ ...tenthFade, background: '#fed232', }}>
+                        <animated.div style={{ ...tenthFade, background: '#e5ba30', }}>
                             <div style={{ ...allText }}>
                                 <h1>Medical on Miami Medical Centre.</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                {/* <h3>Digital Marketing</h3> */}
+                                <p>Paid Search & Social Campaigns. Raising brand awareness in the local community, Driving new customer acquisition and increasing online conversions.</p>
                             </div>
                         </animated.div>
                     </div>

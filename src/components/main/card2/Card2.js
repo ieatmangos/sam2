@@ -9,7 +9,7 @@ export class Card2 extends Component {
                     <div className='card2-left'></div></Fade><Fade right>
                     <div className='card2-right'>
                         <h1>Google & Facebook Ads</h1>
-                        <p>Amplify your message to the right people at the right time with the power of paid digital advertising. We specialise in driving website growth and conversions, generating and capturing leads, remarketing to various custom audiences and putting your message in the right place to reach the right people to return positive results.
+                        <p>Amplify your message to the right people at the right time with the power of paid digital advertising. We help brands accelerate website growth and conversions, generate and capture leads and customer remarketing strategy to reach the right people to return positive results.
 </p>
                         <h3>Platforms we specialise in - Google Adwords, Facebook, Instagram, LinkedIn, Youtube, Pinterest,
 </h3>

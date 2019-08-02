@@ -39,6 +39,11 @@ a {
         padding: 0%;
         background: transparent
     }
+    .head-right h3{
+        margin-right: 2px;
+        margin-left: 2px;
+        text-decoration: none;
+    }
     .head-right{
         display: inline-flex;
         position: absolute;

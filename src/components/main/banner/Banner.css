@@ -28,6 +28,7 @@
 @media only screen and (max-width:800px) {
     .banner {
         height: 20vh;
+        margin-top: 40px;
     }
     .banner-h1{
         font-size: 2em;

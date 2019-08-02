@@ -5,11 +5,11 @@
 }
 
 .jumbo-h1 h1{
-    position: absolute;
-    top: 1%;
+    position: relative;
     font-size: 2em;
     left: 5%;
     width: 90%;
+  
     
 }
 
@@ -27,7 +27,7 @@
     width: 50px;
     position: absolute;
     z-index: 1;
-    top: 5%;
+    top: 4%;
     left: 2.2%;
 }
 
@@ -56,7 +56,7 @@
         width: 20px;
         position: absolute;
         z-index: 1;
-        top: 3%;
+        top: 3.5%;
         left: 2.2%;
     }
 }
