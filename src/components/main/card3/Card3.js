@@ -7,8 +7,8 @@ export class Card3 extends Component {
             <div className='card3'>
                 <Fade left>
                     <div className='card3-left'>
-                        <h1>SEO</h1>
-                        <p>We break down the myths to tell you exactly how to improve your Google rankings and help you get on the first page of Google. With Boutique Digital, you'll know exactly why your search results are improving and what actions we took to achieve this.  </p>
+                        <h1 style={{ fontWeight: '700' }}>SEO</h1>
+                        <p style={{ fontWeight: '300' }}>We break down the myths to tell you exactly how to improve your Google rankings and help you get on the first page of Google. With Boutique Digital, you'll know exactly why your search results are improving and what actions we took to achieve this.  </p>
                         {/* <h3>L</h3> */}
                     </div>
                 </Fade>

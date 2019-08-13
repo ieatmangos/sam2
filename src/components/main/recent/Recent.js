@@ -34,9 +34,11 @@ const Recent = () => {
     const gridStyle = {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        gridTemplateRows: '5vw 30vw 5vw',
+        gridTemplateRows: '50px 30vw 50px',
         textAlign: 'left',
-        gridGap: '30px'
+        gridColumnGap: '50px',
+        gridRowGap: '0px'
+
     }
     const leftStyle = {
         backgroundSize: 'cover',
@@ -178,6 +180,15 @@ const Recent = () => {
             opacity: tenth ? 1 : 0
         }
     })
+    const h1Style = {
+        fontWeight: '700'
+    }
+    const pStyle = {
+        fontWeight: '100'
+    }
+    const h3Style = {
+        fontWeight: '500'
+    }
 
 
     return (
@@ -188,18 +199,18 @@ const Recent = () => {
                     <div style={{ ...leftStyle, backgroundImage: `url(${image1})` }} onMouseOver={() => setFirst(true)} onMouseLeave={() => setFirst(false)}>
                         <animated.div style={{ ...firstFade, background: '#fba47e', }}>
                             <div style={{ ...allText }}>
-                                <h1>Office Leasing</h1>
-                                {/* <h3>Digital Marketing</h3> */}
-                                <p>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions.</p>
+                                <h1 style={{ h1Style }}>Office Leasing</h1>
+                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
+                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions.</p>
                             </div>
                         </animated.div>
                     </div>
                     <div style={{ ...rightStyle, backgroundImage: `url(${image2})` }} onMouseOver={() => setSecond(true)} onMouseLeave={() => setSecond(false)}>
                         <animated.div style={{ ...secondFade, background: '#986287', }}>
                             <div style={{ ...allText }}>
-                                <h1>Plae Shows</h1>
-                                <h3>Digital Marketing</h3>
-                                <p>We did some stuff</p>
+                                <h1 style={{ h1Style }}>Plae Shows</h1>
+                                <h3 style={{ h3Style }}>Digital Marketing</h3>
+                                <p style={{ pStyle }}>We did some stuff</p>
                             </div>
                         </animated.div>
                     </div>
@@ -208,9 +219,9 @@ const Recent = () => {
                     <div style={{ ...leftStyle, backgroundImage: `url(${image3})` }} onMouseOver={() => setThird(true)} onMouseLeave={() => setThird(false)}>
                         <animated.div style={{ ...thirdFade, background: '#93babc', }}>
                             <div style={{ ...allText }}>
-                                <h1>Luxury Accomodation</h1>
-                                {/* <h3>Digital Marketing</h3> */}
-                                <p>Paid Social Campaigns. Driving new customer acquisition and increasing online conversions.
+                                <h1 style={{ h1Style }}>Luxury Accomodation</h1>
+                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
+                                <p style={{ pStyle }}>Paid Social Campaigns. Driving new customer acquisition and increasing online conversions.
 </p>
                             </div>
                         </animated.div>
@@ -220,9 +231,9 @@ const Recent = () => {
                     <div style={{ ...rightStyle, backgroundImage: `url(${image4})` }} onMouseOver={() => setFourth(true)} onMouseLeave={() => setFourth(false)}>
                         <animated.div style={{ ...fourthFade, background: '#e95c5a', }}>
                             <div style={{ ...allText }}>
-                                <h1>Luna & Rose Jewelery</h1>
-                                {/* <h3>Digital Marketing</h3> */}
-                                <p>Paid Search & Social Campaigns
+                                <h1 style={{ h1Style }}>Luna & Rose Jewelery</h1>
+                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
+                                <p style={{ pStyle }}>Paid Search & Social Campaigns
 Email Marketing
 Branding & Design
 Search Engine Optimisation
@@ -233,20 +244,20 @@ Search Engine Optimisation
                 </div>
                 <div style={gridStyle}>
                     <div style={{ ...leftStyle, backgroundImage: `url(${image5})` }} onMouseOver={() => setFifth(true)} onMouseLeave={() => setFifth(false)}>
-                        <animated.div style={{ ...fifthFade, background: '#e5ba30', }}>
+                        <animated.div style={{ ...fifthFade, background: '#f2e055', }}>
                             <div style={{ ...allText }}>
-                                <h1>LL Wedding Hire</h1>
-                                {/* <h3>Search Engine Optimisation</h3> */}
-                                <p>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions. Search Engine Optimisation</p>
+                                <h1 style={{ h1Style }}>LL Wedding Hire</h1>
+                                {/* <h3 style={{h3Style}}>Search Engine Optimisation</h3> */}
+                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions. Search Engine Optimisation</p>
                             </div>
                         </animated.div>
                     </div>
                     <div style={{ ...rightStyle, backgroundImage: `url(${image6})` }} onMouseOver={() => setSixth(true)} onMouseLeave={() => setSixth(false)}>
                         <animated.div style={{ ...sixthFade, background: '#fba47e', }}>
                             <div style={{ ...allText }}>
-                                <h1>Jeffery Construction</h1>
-                                {/* <h3>Digital Marketing</h3> */}
-                                <p>Paid Search & Social Campaigns. Generating customer leads and increasing website traffic and enquiry. </p>
+                                <h1 style={{ h1Style }}>Jeffery Construction</h1>
+                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
+                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Generating customer leads and increasing website traffic and enquiry. </p>
                             </div>
                         </animated.div>
                     </div>
@@ -255,10 +266,10 @@ Search Engine Optimisation
                     <div style={{ ...leftStyle, backgroundImage: `url(${image7})` }} onMouseOver={() => setSeventh(true)} onMouseLeave={() => setSeventh(false)}>
                         <animated.div style={{ ...seventhFade, background: '#986287', }}>
                             <div style={{ ...allText }}>
-                                <h1>Grounded Packaging</h1>
-                                <h3>Search Engine Optimisation
+                                <h1 style={{ h1Style }}>Grounded Packaging</h1>
+                                <h3 style={{ h3Style }}>Search Engine Optimisation
 </h3>
-                                <p>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions.</p>
+                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions.</p>
                             </div>
                         </animated.div>
                     </div>
@@ -266,9 +277,9 @@ Search Engine Optimisation
                     <div style={{ ...rightStyle, backgroundImage: `url(${image8})` }} onMouseOver={() => setEighth(true)} onMouseLeave={() => setEighth(false)}>
                         <animated.div style={{ ...eighthFade, background: '#93babc', }}>
                             <div style={{ ...allText }}>
-                                <h1>Fenton Building</h1>
-                                <h3>Search Engine Optimisation</h3>
-                                <p>Paid Search & Social Campaigns. Generating customer leads and increasing website traffic and enquiry. </p>
+                                <h1 style={{ h1Style }}>Fenton Building</h1>
+                                <h3 style={{ h3Style }}>Search Engine Optimisation</h3>
+                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Generating customer leads and increasing website traffic and enquiry. </p>
                             </div>
                         </animated.div>
                     </div>
@@ -277,18 +288,18 @@ Search Engine Optimisation
                     <div style={{ ...leftStyle, backgroundImage: `url(${image9})` }} onMouseOver={() => setNinth(true)} onMouseLeave={() => setNinth(false)}>
                         <animated.div style={{ ...ninthFade, background: '#e95c5a', }}>
                             <div style={{ ...allText }}>
-                                <h1>Bird & Kite</h1>
-                                {/* <h3>Digital Marketing</h3> */}
-                                <p>Paid Search & Social Campaigns. Email Marketing</p>
+                                <h1 style={{ h1Style }}>Bird & Kite</h1>
+                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
+                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Email Marketing</p>
                             </div>
                         </animated.div>
                     </div>
                     <div style={{ ...rightStyle, backgroundImage: `url(${image10})` }} onMouseOver={() => setTenth(true)} onMouseLeave={() => setTenth(false)}>
-                        <animated.div style={{ ...tenthFade, background: '#e5ba30', }}>
+                        <animated.div style={{ ...tenthFade, background: '#f2e055', }}>
                             <div style={{ ...allText }}>
-                                <h1>Medical on Miami Medical Centre.</h1>
-                                {/* <h3>Digital Marketing</h3> */}
-                                <p>Paid Search & Social Campaigns. Raising brand awareness in the local community, Driving new customer acquisition and increasing online conversions.</p>
+                                <h1 style={{ h1Style }}>Medical on Miami Medical Centre.</h1>
+                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
+                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Raising brand awareness in the local community, Driving new customer acquisition and increasing online conversions.</p>
                             </div>
                         </animated.div>
                     </div>

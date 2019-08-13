@@ -8,7 +8,7 @@ export class Contact extends Component {
         return (
             <div className='contact-wrapper'>
                 <Banner message={'Lets Talk'} color={'white'} />
-                <p style={{ color: 'white', paddingLeft: '5%', width: '80%', paddingBottom: '5%', fontSize: '1em' }}>Let's do great things together! Talk to use about your project, business or ask us a question about and we’ll get back to you within 24 hours</p>
+                <p style={{ color: 'white', marginLeft: '25%', width: '50%', paddingBottom: '0%', fontSize: '1em', marginTop: '-20px' }}>Let's do great things together! Talk to use about your project, business or ask us a question about and we’ll get back to you within 24 hours</p>
                 <ContactForm />
 
             </div>
