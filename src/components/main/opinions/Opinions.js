@@ -27,7 +27,7 @@ export class Opinions extends Component {
 
     render() {
         return (
-            <div>
+            <div id='blog'>
                 <Banner message={'Our Opinions'} />
                 <Fade up>
                     <div className='opinionscardsection'>

@@ -192,7 +192,7 @@ const Recent = () => {
 
 
     return (
-        <div className='recent'>
+        <div className='recent' id='work'>
             <Banner message={'Our Recent Work'} />
             <Fade up cascade>
                 <div style={gridStyle}>
@@ -245,7 +245,7 @@ Search Engine Optimisation
                 <div style={gridStyle}>
                     <div style={{ ...leftStyle, backgroundImage: `url(${image5})` }} onMouseOver={() => setFifth(true)} onMouseLeave={() => setFifth(false)}>
                         <animated.div style={{ ...fifthFade, background: '#f2e055', }}>
-                            <div style={{ ...allText }}>
+                            <div style={{ ...allText, color: 'black' }}>
                                 <h1 style={{ h1Style }}>LL Wedding Hire</h1>
                                 {/* <h3 style={{h3Style}}>Search Engine Optimisation</h3> */}
                                 <p style={{ pStyle }}>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions. Search Engine Optimisation</p>
@@ -297,9 +297,9 @@ Search Engine Optimisation
                     <div style={{ ...rightStyle, backgroundImage: `url(${image10})` }} onMouseOver={() => setTenth(true)} onMouseLeave={() => setTenth(false)}>
                         <animated.div style={{ ...tenthFade, background: '#f2e055', }}>
                             <div style={{ ...allText }}>
-                                <h1 style={{ h1Style }}>Medical on Miami Medical Centre.</h1>
+                                <h1 style={{ h1Style, color: 'black' }}>Medical on Miami Medical Centre.</h1>
                                 {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
-                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Raising brand awareness in the local community, Driving new customer acquisition and increasing online conversions.</p>
+                                <p style={{ pStyle, h1Style, color: 'black' }}>Paid Search & Social Campaigns. Raising brand awareness in the local community, Driving new customer acquisition and increasing online conversions.</p>
                             </div>
                         </animated.div>
                     </div>

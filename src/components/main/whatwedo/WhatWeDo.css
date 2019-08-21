@@ -6,10 +6,11 @@
 }
 
 
-.whatwedo h3{
+.whatwedop{
     margin-left: 5%;
     margin-right: 5%;
     font-weight: 300;
+    
 }
 
 @media only screen and (max-width:800px){
@@ -27,7 +28,7 @@
         margin: 0px;
         font-size: 1em;
     }
-    .whatwedoh3{
+    .whatwedop{
         margin-left: 0px!important;
         margin-right: 5%;
         font-size: 1em;

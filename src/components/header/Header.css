@@ -18,8 +18,7 @@
     position: absolute;
     left: 0%;
     top: 0%;
- 
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .head-right h3{
@@ -50,6 +49,8 @@ a {
 @media only screen and (max-width:1000px){
     .headercircle{
         margin-top: 6%;
+ 
+        font-weight: 900;
     }
 }
 @media only screen and (max-width:800px){
@@ -65,19 +66,7 @@ a {
         padding: 0%;
         background: transparent
     }
-    /* .head-right h3{
-        margin-right: 2px;
-        margin-left: 2px;
-        text-decoration: none;
-    }
-    .head-right{
-        display: inline-flex;
-        position: absolute;
-        right: 0%;
-        font-size: .6em;
-        bottom: 0px;
-        text-decoration: none;
-    } */
+
     .head-left{
         display: inline-flex;
         position: absolute;

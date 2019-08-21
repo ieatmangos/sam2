@@ -6,7 +6,8 @@ export class Card4 extends Component {
         return (
             <div className='card4'>
                 <Fade up>
-                    <div className='card4-left'></div></Fade><Fade right>
+                    <div className='card4-left'></div></Fade>
+                <Fade >
                     <div className='card4-right'>
                         <h1 style={{ fontWeight: '700' }}>Design & Branding</h1>
                         <p style={{ fontWeight: '300' }}>

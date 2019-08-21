@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect, Fragment, createRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useTrail, animated, useSpring } from 'react-spring'
 import './Header.css'
@@ -9,8 +9,11 @@ import hamburgermneu from '../../images/hamburgermneu.svg'
 
 export default function Header() {
     const [Ypos, setYpos] = useState(0)
+    const blogREF = createRef();
     useEffect(() => {
+        const blog = document.getElementById("blog");
         window.addEventListener('scroll', handleScroll);
+
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     function handleScroll() {
@@ -18,10 +21,18 @@ export default function Header() {
         setYpos(currentScrollPos);
     }
 
-    const menuList = [<a href='#work'><h3>Work</h3></a>,
-    <a href='#team'><h3>Team</h3></a>,
-    <a href='#blog'><h3>Blog</h3></a>,
-    <a href='#contact'> <h3>Contact</h3></a>]
+    const handleRef = (data) => {
+        var elmnt = document.getElementById(`${data}`);
+        elmnt.scrollIntoView(
+            {behavior: 'smooth',}
+        );
+    }
+
+
+    const menuList = [  <h3 onClick={() => handleRef('work')}>Work</h3>,
+    <h3 onClick={() => handleRef('team')}>Team</h3>,
+    <h3 onClick={() => handleRef('blog')}>Blog</h3>,
+   <h3 onClick={() => handleRef('contact')}>Contact</h3>]
 
     const [toggle, set] = useState(false)
     const config = { mass: 5, tension: 2000, friction: 200 }
@@ -51,8 +62,9 @@ export default function Header() {
         from: {
             zIndex: 100,
             opacity: 0,
-            width: '60px',
-            height: '60px',
+            width: window.innerWidth > 800 ? '60px' : '40px',
+            // height: window.innerWidth > 800 ? '60px' : '40px',
+
             margin: '15px 5px 5px 0px',
             borderRadius: '50%',
 
@@ -86,10 +98,10 @@ export default function Header() {
 
                 {window.innerWidth > 1000 ?
                     <Fragment>
-                        <a href='#work'><h3>Work</h3></a>
-                        <a href='#team'><h3>Team</h3></a>
-                        <a href='#blog'><h3>Blog</h3></a>
-                        <a href='#contact'> <h3>Contact</h3></a>
+                       <h3 onClick={() => handleRef('work')}>Work</h3>
+                        <h3 onClick={() => handleRef('team')}>Team</h3>
+                        <h3 onClick={() => handleRef('blog')}>Blog</h3>
+                       <h3 onClick={() => handleRef('contact')}>Contact</h3>
                     </Fragment>
                     :
                     <animated.div onClick={() => set(state => !state)} style={hamburgerStyle}>

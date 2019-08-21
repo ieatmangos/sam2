@@ -6,7 +6,7 @@ import Fade from 'react-reveal'
 export class Team extends Component {
     render() {
         return (
-            <div>
+            <div id='team'>
                 <Banner message={'Team'} />
                 <Fade up >
                     <div className='teamcardsection'>

@@ -43,13 +43,13 @@ const Jumbo = () => {
 
     return (
         <div className='jumbo'>
-            <div className='jumbo-h1'><h1 style={{ fontWeight: 900, fontSize: window.innerWidth > 800 ? '5em' : '2em', marginTop: window.innerWidth > 800 ? '10%' : '0%' }}>Welcome to Boutique Digital.</h1>
+            <div className='jumbo-h1'>
                 <h1 style={{ marginTop: window.innerWidth > 800 ? '100px' : '90px', fontWeight: 'lighter', marginBottom: window.innerWidth > 800 ? '0px' : '200px' }}> A Boutique Digital Agency focused on driving results and solving business problems. We love doing great work with good people.</h1></div>
 
             {/* <animated.div className='circle' style={shake} ></animated.div> */}
             {/* <animated.div className='circle' style={follow} ></animated.div> */}
 
-            <animated.div className='arrow' style={bounce}><img src={arrow}></img></animated.div>
+            {window.innerWidth > 1250 ? <animated.div className='arrow' style={bounce}><img src={arrow}></img></animated.div> : null}
         </div>
     )
 }

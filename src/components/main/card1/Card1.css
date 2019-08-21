@@ -13,13 +13,15 @@
     top: 5vw;
     position: relative;
     text-align: right;
+    font-weight: 300;
 
    
 }
 .card1-right{
     width: 40vw;
-    height: 30vw;
-    background-image: url('../../../images/social2.jpg');
+    height: 40vw;
+    background-image: url('../../../images/wwd/Digital.jpg');
+    background-position: 'center center';
     background-size: cover;
     margin-right: 5vw;
 }
@@ -27,13 +29,14 @@
 @media only screen and (max-width: 800px){
 
     .card1{
-        width: 90vw;
+        width: 100%;
         height: auto;
         position: relative;
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        margin-top:'10px'
     }
     
     .card1-left{
@@ -55,9 +58,8 @@
         grid-column: 1/4;
         grid-row-start: 1;
         width: 100%;
-        height: 70vw;
-        background-image: url('../../../images/social2.png');
-        background-size: cover;
+        height: 300px;
+      
       
     }
 }
