@@ -1,17 +1,14 @@
 .jumbo{
-    height: 80vh;
-    
-    
+    height: 35vh; 
 }
 
 .jumbo-h1 h1{
     position: relative;
     font-size: 2em;
-    left: 5%;
-    width: 90%;
-    font-weight: 700;
-  
     
+   margin-top: 150px;
+    width: 100%;
+    font-weight: 300;
 }
 
 .circle{

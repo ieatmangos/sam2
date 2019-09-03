@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Jumbo.css'
 import arrow from '../../../images/arrow.svg'
 import { useSpring, animated } from 'react-spring'
+import GetItTouch from '../../GetItTouch';
 
 
 
@@ -44,15 +45,24 @@ const Jumbo = () => {
     return (
         <div className='jumbo'>
             <div className='jumbo-h1'>
-                <h1 style={{ marginTop: window.innerWidth > 800 ? '100px' : '90px', fontWeight: 'lighter', marginBottom: window.innerWidth > 800 ? '0px' : '200px' }}> A Boutique Digital Agency focused on driving results and solving business problems. We love doing great work with good people.</h1></div>
+                <h1 style={{}}> <span style={{ color: "#49c5b6", fontWeight: '700' }}>A Boutique Digital Agency</span> focused on driving results and solving business problems. We love doing great work with good people.</h1>
+            </div>
 
-            {/* <animated.div className='circle' style={shake} ></animated.div> */}
-            {/* <animated.div className='circle' style={follow} ></animated.div> */}
+            <div style={{ marginTop: '100px' }}><GetItTouch isFirst={true} /></div>
 
-            {window.innerWidth > 1250 ? <animated.div className='arrow' style={bounce}><img src={arrow}></img></animated.div> : null}
         </div>
     )
 }
 
 export default Jumbo
 
+
+
+
+
+
+
+{/* <animated.div className='circle' style={shake} ></animated.div> */ }
+{/* <animated.div className='circle' style={follow} ></animated.div> */ }
+
+{/* {window.innerWidth > 1250 ? <animated.div className='arrow' style={bounce}><img src={arrow}></img></animated.div> : null} */ }

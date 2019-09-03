@@ -2,15 +2,20 @@
     width: 100%;
     height: 30%;
     position: relative;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
+    margin: 0;
+
 }
 
 
 .whatwedop{
-    margin-left: 5%;
-    margin-right: 5%;
+    
     font-weight: 300;
     
+}
+
+.wwd-span{
+    font-weight: 700;
 }
 
 @media only screen and (max-width:800px){

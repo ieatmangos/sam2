@@ -24,15 +24,16 @@ export default function Header() {
     const handleRef = (data) => {
         var elmnt = document.getElementById(`${data}`);
         elmnt.scrollIntoView(
-            {behavior: 'smooth',}
+            { behavior: 'smooth', }
         );
     }
 
 
-    const menuList = [  <h3 onClick={() => handleRef('work')}>Work</h3>,
+    const menuList = [<h3 onClick={() => handleRef('work')}>Work</h3>,
     <h3 onClick={() => handleRef('team')}>Team</h3>,
-    <h3 onClick={() => handleRef('blog')}>Blog</h3>,
-   <h3 onClick={() => handleRef('contact')}>Contact</h3>]
+    // <h3 onClick={() => handleRef('blog')}>Blog</h3>,
+    <h3 onClick={() => handleRef('services')}>Services</h3>,
+    <h3 onClick={() => handleRef('contact')}>Contact</h3>]
 
     const [toggle, set] = useState(false)
     const config = { mass: 5, tension: 2000, friction: 200 }
@@ -89,7 +90,7 @@ export default function Header() {
     return (
 
         <div className='header'>
-            <div className='head-left'> <h1>BOUTIQUE DIGITAL</h1>
+            <div className='head-left'> <h1>BOUTIQ DIGITAL</h1>
                 <Fade right><div className='headercircle'></div></Fade>
             </div>
 
@@ -98,10 +99,11 @@ export default function Header() {
 
                 {window.innerWidth > 1000 ?
                     <Fragment>
-                       <h3 onClick={() => handleRef('work')}>Work</h3>
+                        <h3 onClick={() => handleRef('work')}>Work</h3>
                         <h3 onClick={() => handleRef('team')}>Team</h3>
-                        <h3 onClick={() => handleRef('blog')}>Blog</h3>
-                       <h3 onClick={() => handleRef('contact')}>Contact</h3>
+                        <h3 onClick={() => handleRef('services')}>Services</h3>
+                        {/* <h3 onClick={() => handleRef('blog')}>Blog</h3> */}
+                        <h3 onClick={() => handleRef('contact')}>Contact</h3>
                     </Fragment>
                     :
                     <animated.div onClick={() => set(state => !state)} style={hamburgerStyle}>

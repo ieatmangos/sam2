@@ -1,6 +1,8 @@
 .app{
   margin-left: 2%;
   margin-right: 2%;
+  width: 80%;
+  margin:auto;
   overflow: hidden;
 }
 

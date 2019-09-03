@@ -1,5 +1,6 @@
 .card1{
     width: 100%;
+    margin-top:15%;
     height: auto;
     position: relative;
     display: grid;
@@ -8,9 +9,9 @@
 
 .card1-left{
     align-items: center;
-    left: 10vw;
+    left: 0;
     width: 30vw;
-    top: 5vw;
+    top: 10vw;
     position: relative;
     text-align: right;
     font-weight: 300;
@@ -18,12 +19,12 @@
    
 }
 .card1-right{
-    width: 40vw;
+    width: 39.5vw;
     height: 40vw;
     background-image: url('../../../images/wwd/Digital.jpg');
     background-position: 'center center';
     background-size: cover;
-    margin-right: 5vw;
+    
 }
 
 @media only screen and (max-width: 800px){

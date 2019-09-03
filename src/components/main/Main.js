@@ -32,7 +32,7 @@ export class Main extends Component {
                 <Clients />
                 <Team />
                 <Fade up><Contact /></Fade>
-                <Opinions />
+                {/* <Opinions /> */}
             </div>
         )
     }

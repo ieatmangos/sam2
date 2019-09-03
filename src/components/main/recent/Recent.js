@@ -196,7 +196,7 @@ const Recent = () => {
             <Banner message={'Our Recent Work'} />
             <Fade up cascade>
                 <div style={gridStyle}>
-                    <div style={{ ...leftStyle, backgroundImage: `url(${image1})` }} onMouseOver={() => setFirst(true)} onMouseLeave={() => setFirst(false)}>
+                    <div style={{ ...leftStyle, backgroundImage: `url(${image1})` }} onMouseOver={() => setFirst(true)} onMouseLeave={() => setFirst(false)} onClick={() => setFirst(!first)}>
                         <animated.div style={{ ...firstFade, background: '#fba47e', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Office Leasing</h1>
@@ -205,7 +205,7 @@ const Recent = () => {
                             </div>
                         </animated.div>
                     </div>
-                    <div style={{ ...rightStyle, backgroundImage: `url(${image2})` }} onMouseOver={() => setSecond(true)} onMouseLeave={() => setSecond(false)}>
+                    <div style={{ ...rightStyle, backgroundImage: `url(${image2})` }} onMouseOver={() => setSecond(true)} onMouseLeave={() => setSecond(false)} onClick={() => setSecond(!second)}>
                         <animated.div style={{ ...secondFade, background: '#986287', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Plae Shows</h1>
@@ -216,7 +216,7 @@ const Recent = () => {
                     </div>
                 </div>
                 <div style={gridStyle}>
-                    <div style={{ ...leftStyle, backgroundImage: `url(${image3})` }} onMouseOver={() => setThird(true)} onMouseLeave={() => setThird(false)}>
+                    <div style={{ ...leftStyle, backgroundImage: `url(${image3})` }} onMouseOver={() => setThird(true)} onMouseLeave={() => setThird(false)} onClick={() => setThird(!third)}>
                         <animated.div style={{ ...thirdFade, background: '#93babc', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Luxury Accomodation</h1>
@@ -228,7 +228,7 @@ const Recent = () => {
 
 
                     </div>
-                    <div style={{ ...rightStyle, backgroundImage: `url(${image4})` }} onMouseOver={() => setFourth(true)} onMouseLeave={() => setFourth(false)}>
+                    <div style={{ ...rightStyle, backgroundImage: `url(${image4})` }} onMouseOver={() => setFourth(true)} onMouseLeave={() => setFourth(false)} onClick={() => setFourth(!fourth)}>
                         <animated.div style={{ ...fourthFade, background: '#e95c5a', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Luna & Rose Jewelery</h1>
@@ -243,16 +243,16 @@ Search Engine Optimisation
                     </div>
                 </div>
                 <div style={gridStyle}>
-                    <div style={{ ...leftStyle, backgroundImage: `url(${image5})` }} onMouseOver={() => setFifth(true)} onMouseLeave={() => setFifth(false)}>
+                    <div style={{ ...leftStyle, backgroundImage: `url(${image5})` }} onMouseOver={() => setFifth(true)} onMouseLeave={() => setFifth(false)} onClick={() => setFifth(!fifth)}>
                         <animated.div style={{ ...fifthFade, background: '#f2e055', }}>
-                            <div style={{ ...allText, color: 'black' }}>
+                            <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>LL Wedding Hire</h1>
                                 {/* <h3 style={{h3Style}}>Search Engine Optimisation</h3> */}
                                 <p style={{ pStyle }}>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions. Search Engine Optimisation</p>
                             </div>
                         </animated.div>
                     </div>
-                    <div style={{ ...rightStyle, backgroundImage: `url(${image6})` }} onMouseOver={() => setSixth(true)} onMouseLeave={() => setSixth(false)}>
+                    <div style={{ ...rightStyle, backgroundImage: `url(${image6})` }} onMouseOver={() => setSixth(true)} onMouseLeave={() => setSixth(false)} onClick={() => setSixth(!sixth)}>
                         <animated.div style={{ ...sixthFade, background: '#fba47e', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Jeffery Construction</h1>
@@ -263,7 +263,7 @@ Search Engine Optimisation
                     </div>
                 </div>
                 <div style={gridStyle}>
-                    <div style={{ ...leftStyle, backgroundImage: `url(${image7})` }} onMouseOver={() => setSeventh(true)} onMouseLeave={() => setSeventh(false)}>
+                    <div style={{ ...leftStyle, backgroundImage: `url(${image7})` }} onMouseOver={() => setSeventh(true)} onMouseLeave={() => setSeventh(false)} onClick={() => setSeventh(!seventh)}>
                         <animated.div style={{ ...seventhFade, background: '#986287', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Grounded Packaging</h1>
@@ -274,7 +274,7 @@ Search Engine Optimisation
                         </animated.div>
                     </div>
 
-                    <div style={{ ...rightStyle, backgroundImage: `url(${image8})` }} onMouseOver={() => setEighth(true)} onMouseLeave={() => setEighth(false)}>
+                    <div style={{ ...rightStyle, backgroundImage: `url(${image8})` }} onMouseOver={() => setEighth(true)} onMouseLeave={() => setEighth(false)} onClick={() => setEighth(!eighth)}>
                         <animated.div style={{ ...eighthFade, background: '#93babc', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Fenton Building</h1>
@@ -285,7 +285,7 @@ Search Engine Optimisation
                     </div>
                 </div>
                 <div style={gridStyle}>
-                    <div style={{ ...leftStyle, backgroundImage: `url(${image9})` }} onMouseOver={() => setNinth(true)} onMouseLeave={() => setNinth(false)}>
+                    <div style={{ ...leftStyle, backgroundImage: `url(${image9})` }} onMouseOver={() => setNinth(true)} onMouseLeave={() => setNinth(false)} onClick={() => setNinth(!ninth)}>
                         <animated.div style={{ ...ninthFade, background: '#e95c5a', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Bird & Kite</h1>
@@ -294,12 +294,12 @@ Search Engine Optimisation
                             </div>
                         </animated.div>
                     </div>
-                    <div style={{ ...rightStyle, backgroundImage: `url(${image10})` }} onMouseOver={() => setTenth(true)} onMouseLeave={() => setTenth(false)}>
+                    <div style={{ ...rightStyle, backgroundImage: `url(${image10})` }} onMouseOver={() => setTenth(true)} onMouseLeave={() => setTenth(false)} onClick={() => setTenth(!tenth)}>
                         <animated.div style={{ ...tenthFade, background: '#f2e055', }}>
                             <div style={{ ...allText }}>
-                                <h1 style={{ h1Style, color: 'black' }}>Medical on Miami Medical Centre.</h1>
+                                <h1 style={{ h1Style }}>Medical on Miami Medical Centre.</h1>
                                 {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
-                                <p style={{ pStyle, h1Style, color: 'black' }}>Paid Search & Social Campaigns. Raising brand awareness in the local community, Driving new customer acquisition and increasing online conversions.</p>
+                                <p style={{ pStyle, h1Style }}>Paid Search & Social Campaigns. Raising brand awareness in the local community, Driving new customer acquisition and increasing online conversions.</p>
                             </div>
                         </animated.div>
                     </div>

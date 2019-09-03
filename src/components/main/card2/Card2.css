@@ -12,17 +12,17 @@
     width: 30vw;
     position: relative;
     text-align: left;
-    left: 5vw;
-    top: 5vw;
+    left: 10vw;
+    top: 10vw;
 
 }
 .card2-left{
-    width: 40vw;
+    width: 39.5vw;
     height: 40vw;
     background-image: url('../../../images/wwd/Google.jpg');
     background-size: cover;
     background-position: center;
-    margin-left: 5vw;
+  
   
 }
 
