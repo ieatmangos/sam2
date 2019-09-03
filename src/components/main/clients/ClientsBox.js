@@ -8,24 +8,24 @@ import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
 
 const first = {
-    name: 'Bob',
-    title: 'Manage',
-    quote: 'Lorem ipsum dolor sit amet rendis soluta nostrum dolore fugiat, iusto cum. Veritatis earum, totam facilis id modi neque quod.',
+    name: 'Ben',
+    title: 'Co-Founder, Grounded Packaging',
+    quote: 'We’ve worked with the team at Butiq Digital since launching Grounded Packaging, they’ve been instrumental in getting our brand and products out to the market and driving customer enquiries and leads from the day we started. ',
 }
 
 const second = {
-    name: 'Sam',
-    title: 'something',
-    quote: 'Lorem ipsum dolarum, totam facilis id modi neque quod.',
+    name: 'Jodi',
+    title: 'Founder, Bird & Kite',
+    quote: 'We love working with Sam and his team, we look to them as our digital experts who look after an aspect of our business we know very little about. We’ve seen some great results with increased online sales and new customers which is all we can ask for.',
 }
 const third = {
-    name: 'Pete',
-    title: 'Designer',
-    quote: 'Lorem ipsum dolarum, totam facilis id modi neque ilis id modi neque ilis id modi neque ilis id modi neque quod.',
+    name: 'Rosie',
+    title: 'Founder, La Luna Rose',
+    quote: 'Working with Sam & Annabelle has been a pleasure, they always put my business first and make sure that every dollar spent is accountable and has a purpose. They’ve been a crucial part of my business growth recently, and I look forward to continuing to work together.',
 }
 const fourth = {
-    name: 'Mark',
-    title: 'Operator',
+    name: 'Lucy',
+    title: 'Founder, LL Wedding Hire',
     quote: 'Lorem ipsum dolarum, totam fm, totam facilis id modi neque quod.',
 }
 

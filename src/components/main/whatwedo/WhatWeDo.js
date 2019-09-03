@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './WhatWeDo.css'
 
 export class WhatWeDo extends Component {
+
+    
     render() {
         return (
             <div className='whatwedo'>

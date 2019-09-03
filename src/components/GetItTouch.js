@@ -21,7 +21,12 @@ export default function GetItTouch(props) {
     })
 
 
-
+    const handleRef = (data) => {
+        var elmnt = document.getElementById(`${data}`);
+        elmnt.scrollIntoView(
+            { behavior: 'smooth', }
+        );
+    }
 
     return (
         <animated.div
@@ -29,6 +34,7 @@ export default function GetItTouch(props) {
             className='GetItTouch'
             onMouseOver={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
+            onClick={() => handleRef("contact")}
         >
             <p className='button-text'>GET IN TOUCH   </p>     </animated.div>
     )
