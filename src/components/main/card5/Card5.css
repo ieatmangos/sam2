@@ -26,10 +26,10 @@
 
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1100px){
 
     .card5{
-        width: 90vw;
+        width: 100%;
         height: auto;
         position: relative;
         display: grid;
@@ -42,10 +42,10 @@
         grid-column: 1/4;
         grid-row-start: 2;
         align-items: center;
-        width:80%;
+        width:100%;
         position: relative;
         text-align: left;
-        left: 5%;
+        left: 0%;
         top: 0px;
     
     }

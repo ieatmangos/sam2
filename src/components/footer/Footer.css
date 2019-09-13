@@ -78,7 +78,28 @@ margin:auto;
 @media only screen and (max-width: 800px){
 
   
-  
-  
+    .footer-banner-h1{
+        font-size: 2em;
+        font-weight: 700;
+        left: 0;
+        top: 30%;
+        position: relative;
+        color: black;
+        display: inline-flex;
     
+    }
+    .footer-circle{
+        height: 2.5vw;
+        width: 2.5vw;
+        border-radius: 50%;
+        left: 100%;
+        background: #49c5b6; 
+        top: 79%;
+        position: absolute;
+    }
+  
+    .footer-button{
+        top: 10%;
+        position: relative;
+      }
 }

@@ -20,13 +20,13 @@
 
 @media only screen and (max-width:800px){
     .whatwedo{
-        width: 95%;
+        width: 100%;
         display: grid;
-        grid-template-rows: 1fr 2fr 2fr;
-        height: 20vh;
-        left: 5%;
+        grid-template-rows: .7fr 1fr;
+        height: auto;
+    
         position: relative;
-        padding-bottom: 60%
+     
     }
     .whatwedo h1{
         padding: 0px;
@@ -34,8 +34,7 @@
         font-size: 1em;
     }
     .whatwedop{
-        margin-left: 0px!important;
-        margin-right: 5%;
+
         font-size: 1em;
     }
     

@@ -20,10 +20,33 @@
     will-change: transform, opacity;
 
   }
+  .quoteDiv{
+   
+    padding-right: 10%;
+    
+
+}
+
+
   @media only screen and (max-width:800px) {
     .wrapper{
         width: 100%;
         height: 30vh;
       
     }
-}
+    .quoteDiv{
+        font-size:.5em;
+        padding-right: 10%;
+        
+    
+    }
+    .quoteH1{
+        font-size:1em;
+    }
+    
+    .quoteH3{
+        font-size:.5em;
+        font-weight: 100;
+    }
+
+  }

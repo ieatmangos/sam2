@@ -33,8 +33,10 @@ const Recent = () => {
 
     const gridStyle = {
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gridTemplateRows: '50px 30vw 50px',
+        gridTemplateColumns: window.innerWidth > 800 ? '1fr 1fr' : "1fr",
+        // gridTemplateRows: '30vw 30vw',
+        // gridTemplateColumns: '1fr 1fr',
+        gridTemplateRows: window.innerWidth > 800 ? '50px 30vw 50px' : "60vh 60vh",
         textAlign: 'left',
         gridColumnGap: '50px',
         gridRowGap: '0px'
@@ -43,10 +45,14 @@ const Recent = () => {
     const leftStyle = {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
+        backgroundPosition: "50% 50%",
         height: '100%',
         width: '100%',
+        // gridRowStart: 1,
+        // gridRowEnd: 3,
+        // gridColumnStart: 1,
         gridRowStart: 1,
-        gridRowEnd: 3,
+        gridRowEnd: window.innerWidth > 800 ? 3 : 2,
         gridColumnStart: 1,
         position: 'relative'
 
@@ -54,12 +60,16 @@ const Recent = () => {
 
     const rightStyle = {
         backgroundSize: 'cover',
+        backgroundPosition: "50% 50%",
         backgroundRepeat: 'no-repeat',
         height: '100%',
         width: '100%',
         gridRowStart: 2,
-        gridRowEnd: 4,
-        gridColumnStart: 2
+        gridRowEnd: window.innerWidth > 800 ? 4 : 3,
+        gridColumnStart: window.innerWidth > 800 ? 2 : 1
+        // gridRowStart: 2,
+        // gridRowEnd: 3,
+        // gridColumnStart: 2
 
     }
     const allText = {
@@ -68,9 +78,9 @@ const Recent = () => {
         paddingLeft: '10%',
         paddingRight: '10%',
         color: 'white',
-        bottom: window.innerWidth > 800 ? '10%' : '0%',
-        fontSize: window.innerWidth > 800 ? '1.5em' : '.5em',
-        lineHeight: window.innerWidth > 800 ? '1.2em' : '.9em'
+        bottom: '0%',
+        fontSize: window.innerWidth > 800 ? '1em' : '.9em',
+        // lineHeight: window.innerWidth > 800 ? '1.2em' : '.9em'
     }
     const firstFade = useSpring({
         from: {
@@ -200,8 +210,9 @@ const Recent = () => {
                         <animated.div style={{ ...firstFade, background: '#fba47e', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Office Leasing</h1>
-                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
-                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions.</p>
+
+                                <p style={{ pStyle }}>Driving new customer acquisition and increasing online conversions.</p>
+                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns</h3>
                             </div>
                         </animated.div>
                     </div>
@@ -209,8 +220,12 @@ const Recent = () => {
                         <animated.div style={{ ...secondFade, background: '#986287', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Plae Shows</h1>
-                                <h3 style={{ h3Style }}>Digital Marketing</h3>
-                                <p style={{ pStyle }}>We did some stuff</p>
+
+                                <p style={{ pStyle }}>Driving new customer acquisition and online conversions with a high ROI on marketing spend.
+</p>
+                                <h3 style={{ h3Style }}>Paid Social Campaigns
+                                E-Commerce
+</h3>
                             </div>
                         </animated.div>
                     </div>
@@ -220,9 +235,13 @@ const Recent = () => {
                         <animated.div style={{ ...thirdFade, background: '#93babc', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Luxury Accomodation</h1>
-                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
-                                <p style={{ pStyle }}>Paid Social Campaigns. Driving new customer acquisition and increasing online conversions.
+
+                                <p style={{ pStyle }}>
+                                    Driving new customer acquisition and increasing online conversions.
+
 </p>
+                                <h3 style={{ h3Style }}>Paid Social Campaigns
+</h3>
                             </div>
                         </animated.div>
 
@@ -232,12 +251,14 @@ const Recent = () => {
                         <animated.div style={{ ...fourthFade, background: '#e95c5a', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Luna & Rose Jewelery</h1>
-                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
-                                <p style={{ pStyle }}>Paid Search & Social Campaigns
-Email Marketing
-Branding & Design
-Search Engine Optimisation
-</p>
+                                <p style={{ pStyle }}>Driving brand awareness, increasing online conversions and e-commerce efficiency as well as creating an authentic and visually appealing brand in a competitive market.
+                                </p>
+                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns
+                                    Email Marketing
+                                    Branding & Design
+                                    Search Engine Optimisation
+                                </h3>
+
                             </div>
                         </animated.div>
                     </div>
@@ -247,8 +268,11 @@ Search Engine Optimisation
                         <animated.div style={{ ...fifthFade, background: '#f2e055', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>LL Wedding Hire</h1>
-                                {/* <h3 style={{h3Style}}>Search Engine Optimisation</h3> */}
-                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions. Search Engine Optimisation</p>
+                                <p style={{ pStyle }}>Driving new customer acquisition for wedding & event hire with a high ROI on marketing spend, increasing online conversion rate of website visitors to enquiries.</p>
+
+                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns
+                                    Search Engine Optimisation
+                                    </h3>
                             </div>
                         </animated.div>
                     </div>
@@ -256,8 +280,9 @@ Search Engine Optimisation
                         <animated.div style={{ ...sixthFade, background: '#fba47e', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Jeffery Construction</h1>
-                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
-                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Generating customer leads and increasing website traffic and enquiry. </p>
+
+                                <p style={{ pStyle }}>Generating customer leads and enquiry from an audience specifically looking for high end building and renovations in Auckland.  </p>
+                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns</h3>
                             </div>
                         </animated.div>
                     </div>
@@ -267,9 +292,12 @@ Search Engine Optimisation
                         <animated.div style={{ ...seventhFade, background: '#986287', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Grounded Packaging</h1>
-                                <h3 style={{ h3Style }}>Search Engine Optimisation
+                                <p style={{ pStyle }}>Raising awareness of a new brand in a competitive market, driving new customer acquisition and increasing online conversions.</p>
+
+                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns
+Search Engine Optimisation
+
 </h3>
-                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Driving new customer acquisition and increasing online conversions.</p>
                             </div>
                         </animated.div>
                     </div>
@@ -278,8 +306,12 @@ Search Engine Optimisation
                         <animated.div style={{ ...eighthFade, background: '#93babc', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Fenton Building</h1>
-                                <h3 style={{ h3Style }}>Search Engine Optimisation</h3>
-                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Generating customer leads and increasing website traffic and enquiry. </p>
+
+                                <p style={{ pStyle }}>Generating customer leads and enquiry from an audience specifically looking for high end building and renovations in Tauranga. </p>
+                                <h3 style={{ h3Style }}>
+                                    Paid Search & Social Campaigns
+                                    Search Engine Optimisation
+</h3>
                             </div>
                         </animated.div>
                     </div>
@@ -289,8 +321,11 @@ Search Engine Optimisation
                         <animated.div style={{ ...ninthFade, background: '#e95c5a', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Bird & Kite</h1>
-                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
-                                <p style={{ pStyle }}>Paid Search & Social Campaigns. Email Marketing</p>
+                                <p style={{ pStyle }}>Driving brand awareness, increasing online conversions and e-commerce efficiency.</p>
+
+                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns
+Email Marketing
+</h3>
                             </div>
                         </animated.div>
                     </div>
@@ -298,8 +333,9 @@ Search Engine Optimisation
                         <animated.div style={{ ...tenthFade, background: '#f2e055', }}>
                             <div style={{ ...allText }}>
                                 <h1 style={{ h1Style }}>Medical on Miami Medical Centre.</h1>
-                                {/* <h3 style={{h3Style}}>Digital Marketing</h3> */}
-                                <p style={{ pStyle, h1Style }}>Paid Search & Social Campaigns. Raising brand awareness in the local community, Driving new customer acquisition and increasing online conversions.</p>
+
+                                <p style={{ pStyle, h1Style }}>Raising brand awareness in the local community, driving new customer acquisition and increasing online conversions.</p>
+                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns</h3>
                             </div>
                         </animated.div>
                     </div>

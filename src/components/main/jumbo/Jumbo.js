@@ -7,40 +7,6 @@ import GetItTouch from '../../GetItTouch';
 
 
 const Jumbo = () => {
-    // const [scrolled, set] = useState(4.5)
-    // const shake = useSpring({
-    //     from: {
-    //         transform: 'translateX(-100px)'
-    //     },
-    //     to: {
-    //         transform: 'translateX(0px)'
-    //     },
-    //     config: {
-
-    //         friction: '20',
-    //         mass: '2',
-    //         tension: '300'
-    //     },
-
-    // })
-    const bounce = useSpring({
-        from: {
-            transform: 'translateY(20px)'
-        },
-        to: {
-            transform: 'translateY(0px)'
-        },
-        config: {
-
-            friction: '4',
-            mass: '2',
-            tension: '200'
-        },
-        delay: 1000
-
-    })
-
-
 
     return (
         <div className='jumbo'>
@@ -48,7 +14,12 @@ const Jumbo = () => {
                 <h1 style={{}}> <span style={{ color: "#49c5b6", fontWeight: '700' }}>A Boutique Digital Agency</span> focused on driving results and solving business problems. We love doing great work with good people.</h1>
             </div>
 
-            <div style={{ marginTop: '100px' }}><GetItTouch isFirst={true} /></div>
+            <div style={{
+                position: "absolute",
+                width: "100%",
+                marginTop: window.innerWidth > 800 ? '100px' : '350px',
+                // marginBottom: window.innerWidth > 800 ? '0px' : '100px;'
+            }}><GetItTouch isFirst={true} /></div>
 
         </div>
     )
