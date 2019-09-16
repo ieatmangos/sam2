@@ -1,12 +1,13 @@
 import React from 'react'
 
 import './TeamCard.css'
-const TeamCard = () => {
+const TeamCard = (props) => {
     return (
 
         <div className='teamcard'>
-            <div className='teamimage'></div>
-            <div className='teamtext'><h1>Sam</h1><h3>Owner</h3><p>Loremkjgj ipsum dolor sit amet.</p></div>
+            <div className='teamimage' style={{ backgroundImage: `url(${props.image})`, backgroundPosition: "50% 50%", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}>
+                <div className='teamtext'><h1>{props.name}</h1><h3>{props.title}</h3></div>
+            </div>
         </div>
 
     )

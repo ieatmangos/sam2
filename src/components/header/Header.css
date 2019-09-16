@@ -2,11 +2,11 @@
     width: 100%;
     height: 60px;
     margin-top: 50px;
-    border-bottom: .5px solid black;
     position: relative;
     display: inline-flex;
     padding: 0%;
-    background: transparent
+    background: transparent;
+    align-items: center;
 }
 
 .head-right{
@@ -20,12 +20,16 @@
     left: 0%;
     top: 0%;
     font-weight: 900;
+    align-items: center;
 }
 
 .head-right h3{
-    margin: 10px;
+    right: 0px;
+    margin-right: 15px;
+    margin-top: 25px;
     text-decoration: none;
     font-weight: 700;
+    align-items: right;
     
 }
 .head-left h1{
@@ -35,37 +39,43 @@ a {
     text-decoration: none;
 }
 .headercircle{
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     left: 0%;
-  
     background: #49c5b6; 
- 
-    margin-top: 5%;
-  
     position: relative;
+}
+
+
+.menu-bg{
+    width: 100vw;
+    height: 200vh;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  background: #49c5b6;
+  z-index: 2;
+
+    
+   
+  
 
 }
-@media only screen and (max-width:1000px){
-    .headercircle{
-        margin-top: 6%;
- 
-        font-weight: 900;
-    }
-}
+
 @media only screen and (max-width:800px){
     .headercircle{
-        margin-top: 7%;
+        height: 15px;
+    width: 15px;
     }
     .header{
         width: 100%;
         height: 40px;
-        border-bottom: .5px solid black;
         position: relative;
         display: inline-flex;
         padding: 0%;
-        background: transparent
+        background: transparent;
+        align-items: center;
     }
 
     .head-left{
@@ -76,7 +86,3 @@ a {
         bottom: 0px;
     }
 }
-@media only screen and (max-width:600px){
-    .headercircle{
-        margin-top: 10%;
-    }}

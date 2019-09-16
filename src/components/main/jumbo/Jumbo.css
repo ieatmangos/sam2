@@ -10,6 +10,9 @@
     font-weight: 300;
 }
 
+/* #jumbo-title{
+    opacity:0
+} */
 
 @media only screen and (max-width:800px){
     .jumbo {

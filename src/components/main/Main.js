@@ -22,7 +22,9 @@ export class Main extends Component {
             <div className='main'>
                 <Jumbo />
                 <Banner message={'What We Do'} />
-                <Fade up><WhatWeDo /></Fade>
+                {/* <Fade up> */}
+                <WhatWeDo />
+                {/* </Fade> */}
                 <Card1 />
                 <Card2 />
                 <Card3 />

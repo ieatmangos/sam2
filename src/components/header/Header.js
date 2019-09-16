@@ -41,16 +41,9 @@ export default function Header() {
     const trail = useTrail(menuList.length, {
         config,
         opacity: toggle && Ypos < 5 ? 1 : 0,
-        x: toggle && Ypos < 5 ? 0 : 40,
-        background: 'white',
-        border: '1px solid black',
-
-        textAlign: 'center',
-
-        position: 'relative',
-
-        margin: '15px 5px 0px 0px',
-
+        x: toggle && Ypos < 5 ? -50 : 40,
+        textAlign: "right",
+        color: "black",
         from: { opacity: 0, x: 20 },
     })
     const hidemenuonscroll = () => {
@@ -66,12 +59,10 @@ export default function Header() {
             width: window.innerWidth > 800 ? '60px' : '40px',
             // height: window.innerWidth > 800 ? '60px' : '40px',
 
-            margin: '15px 5px 5px 0px',
+            // margin: '15px 5px 5px 0px',
             borderRadius: '50%',
-
-
             transform: 'rotate(0deg)',
-            textAlign: 'center'
+
         },
         to: {
             opacity: Ypos > 7 ? 0 : 1,
@@ -87,61 +78,62 @@ export default function Header() {
         config: { friction: 80 }
     })
 
+
+    const menuStyle = useSpring({
+        opacity: toggle && Ypos < 5 ? 1 : 0,
+        transform: toggle && Ypos < 5 ? "translateX(0%)" : "translateX(100%"
+    })
+
+
     return (
+        <Fragment>
+            <div className='header'>
+                <div className='head-left'> <h1>BUTIQ DIGITAL</h1>
+                    <Fade right><div className='headercircle'></div></Fade>
+                </div>
+                <div className='head-right'>
+                    {window.innerWidth > 1000 ?
+                        <Fragment>
+                            <h3 onClick={() => handleRef('work')}>Work</h3>
+                            <h3 onClick={() => handleRef('team')}>Team</h3>
+                            <h3 onClick={() => handleRef('services')}>Services</h3>
+                            {/* <h3 onClick={() => handleRef('blog')}>Blog</h3> */}
+                            <h3 onClick={() => handleRef('contact')}>Contact</h3>
+                        </Fragment>
+                        :
+                        <animated.div onClick={() => set(state => !state)} style={hamburgerStyle}>
+                            <img style={{
+                                // display: 'absolute',
+                                width: '60%',
 
-        <div className='header'>
-            <div className='head-left'> <h1>BOUTIQ DIGITAL</h1>
-                <Fade right><div className='headercircle'></div></Fade>
-            </div>
-
-            <div className='head-right'>
-
-
-                {window.innerWidth > 1000 ?
+                            }} src={hamburgermneu}>
+                            </img>
+                        </animated.div>
+                    }
                     <Fragment>
-                        <h3 onClick={() => handleRef('work')}>Work</h3>
-                        <h3 onClick={() => handleRef('team')}>Team</h3>
-                        <h3 onClick={() => handleRef('services')}>Services</h3>
-                        {/* <h3 onClick={() => handleRef('blog')}>Blog</h3> */}
-                        <h3 onClick={() => handleRef('contact')}>Contact</h3>
+                        <animated.div style={hamburgerDivStyle} >
+                            {hidemenuonscroll()}
+                            {
+                                trail.map(({ x, ...rest }, index) => (
+                                    <animated.div
+                                        key={menuList[index].key}
+                                        className="trails-text"
+                                        style={{ ...rest, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
+                                        {menuList[index]}
+                                    </animated.div>
+                                ))
+                            }
+                        </animated.div>
                     </Fragment>
-                    :
-                    <animated.div onClick={() => set(state => !state)} style={hamburgerStyle}>
-                        <img style={{
-                            // display: 'absolute',
-                            width: '60%',
-
-                        }} src={hamburgermneu}>
-                        </img>
-                    </animated.div>
-                }
+                </div>
 
 
 
-                <Fragment>
-                    <animated.div style={hamburgerDivStyle} >
-                        {hidemenuonscroll()}
-                        {
-                            trail.map(({ x, ...rest }, index) => (
-                                <animated.div
-                                    key={menuList[index].key}
-                                    className="trails-text"
-                                    style={{ ...rest, transform: x.interpolate(x => `translate3d(${x}px,0,0)`) }}>
-                                    {menuList[index]}
-                                </animated.div>
-                            ))
-                        }
-                    </animated.div>
 
-                </Fragment>
             </div>
 
-
-
-
-        </div>
-
-
+            <animated.div style={menuStyle} className='menu-bg'></animated.div>
+        </Fragment>
     )
 }
 
