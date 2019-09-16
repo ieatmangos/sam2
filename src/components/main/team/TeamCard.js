@@ -6,8 +6,9 @@ const TeamCard = (props) => {
 
         <div className='teamcard'>
             <div className='teamimage' style={{ backgroundImage: `url(${props.image})`, backgroundPosition: "50% 50%", backgroundSize: "contain", backgroundRepeat: "no-repeat" }}>
-                <div className='teamtext'><h1>{props.name}</h1><h3>{props.title}</h3></div>
             </div>
+            <div className='teamtext'><h1>{props.name}</h1><h3>{props.title}</h3></div>
+
         </div>
 
     )

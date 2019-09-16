@@ -6,34 +6,31 @@
 }
 
 .teamcard{
-    height: 30vw;
+    height: 40vw;
     width: 40%;
     margin: auto;
     margin-bottom: 30px;
-    margin-top: 30px;
     padding: 5px;
 
 }
 .teamtext{
-    position: absolute;
-   
+    position: relative;
     width: 100%;
-    margin-top: 20px!important;
-    margin: auto;
-    padding: 5px;
-    left: 10%;
+    left: 0%;
     bottom:0%;
-     color:#49c5b6;
+    text-align: center;
+     color:black;
     z-index: 1;
 
-}
 
+}
+.teamtext h3 {
+    font-weight: 100;
+}
 
 @media only screen and (max-width: 800px){
     .teamcard{
-        height: 80vw;
-        margin-top: 5px!important;
-        margin-bottom: 5px!important;
+        height: 50vh;
         margin: auto;
         padding: 5px;
         width: 100%;
@@ -41,20 +38,21 @@
     }
 
     .teamimage{
-        width: 90%;
-        height: 100%;
+        width: 100%;
+        height: 80%;
         margin: auto;
         position: relative;
     }
     .teamtext{
-        width: 100%;
-        height:auto;
-        margin: auto;
-        position:absolute;
-       left: 10%;
-       bottom:5%;
-        color:#49c5b6;
-        font-size: 1.5em;
+        position: relative;
+    width: 100%;
+    left: 0%;
+    bottom:.5%;
+    text-align: center;
+     color:black;
+        z-index: 1;
+
+        
     }
     .teamtext h1 {
         font-size: 1em;

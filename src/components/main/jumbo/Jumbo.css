@@ -10,9 +10,15 @@
     font-weight: 300;
 }
 
-/* #jumbo-title{
-    opacity:0
-} */
+#whitebg{
+    position: absolute;
+    height: 200vh;
+    width:100vw;
+    left:0%;
+    top:0%;
+    background:green;
+    
+}
 
 @media only screen and (max-width:800px){
     .jumbo {

@@ -29,18 +29,35 @@ const fourth = {
     quote: 'Lorem ipsum dolarum, totam fm, totam facilis id modi neque quod.',
 }
 
+const quoteBox = {
+    display: 'grid',
+    gridTemplateColumns: window.innerWidth > 800 ? '2fr 4fr' : '1fr',
+    gridTemplateRows: window.innerWidth > 800 ? '1fr' : '.7fr 4fr',
+    gridGap: "10px"
+
+}
+
+const quoteh1Style = {
+    gridRowStart: 0,
+    margin: window.innerWidth > 800 ? "0% 0% 0% 10%" : "0% 0% 0% 0%",
+    fontSize: window.innerWidth > 800 ? '1em' : '.9em',
+}
+const quoteh3Style = {
+    gridRowStart: 1,
+    margin: window.innerWidth > 800 ? "0% 0% 0% 10%" : "0% 0% 0% 0%"
+}
+
 
 const pages = [
-
-    ({ style }) => <animated.div style={{ ...style, background: '#986287', display: 'grid', gridTemplateColumns: '2fr 4fr', gridGap: "10px" }}><div style={{ marginLeft: '10%' }}><h1 className='quoteH1'>{first.name}</h1>< h3 className='quoteH3'>{first.title}</h3></div><div className='quoteDiv' >"{first.quote}"</div></animated.div>,
-    ({ style }) => <animated.div style={{ ...style, background: '#fba47e', display: 'grid', gridTemplateColumns: '2fr 4fr', gridGap: "10px" }}><div style={{ marginLeft: '10%' }}><h1 className='quoteH1'>{fourth.name}</h1><h3 className='quoteH3'>{fourth.title}</h3></div><div className='quoteDiv' >"{fourth.quote}"</div></animated.div>,
-    ({ style }) => <animated.div style={{ ...style, background: '#93babc', display: 'grid', gridTemplateColumns: '2fr 4fr', gridGap: "10px" }}><div style={{ marginLeft: '10%' }}><h1 className='quoteH1'>{second.name}</h1><h3 className='quoteH3'>{second.title}</h3></div><div className='quoteDiv' >"{second.quote}"</div></animated.div>,
-    ({ style }) => <animated.div style={{ ...style, background: '#e95c5a', display: 'grid', gridTemplateColumns: '2fr 4fr', gridGap: "10px" }}><div style={{ marginLeft: '10%' }}><h1 className='quoteH1'>{third.name}</h1>< h3 className='quoteH3'>{third.title}</h3></div><div className='quoteDiv' >"{third.quote}"</div></animated.div>,
+    ({ style }) => <animated.div style={{ ...style, background: '#986287', ...quoteBox }}><div style={{}}><h1 style={quoteh1Style} className='quoteH1'>{first.name}</h1>< h3 style={quoteh3Style} className='quoteH3'>{first.title}</h3></div><div className='quoteDiv' >"{first.quote}"</div></animated.div>,
+    // ({ style }) => <animated.div style={{ ...style, background: '#fba47e', ...quoteBox }}><div style={{}}><h1 style={quoteh1Style} className='quoteH1'>{fourth.name}</h1><h3 style={quoteh3Style} className='quoteH3'>{fourth.title}</h3></div><div className='quoteDiv' >"{fourth.quote}"</div></animated.div>,
+    ({ style }) => <animated.div style={{ ...style, background: '#93babc', ...quoteBox }}><div style={{}}><h1 style={quoteh1Style} className='quoteH1'>{second.name}</h1><h3 style={quoteh3Style} className='quoteH3'>{second.title}</h3></div><div className='quoteDiv' >"{second.quote}"</div></animated.div>,
+    ({ style }) => <animated.div style={{ ...style, background: '#e95c5a', ...quoteBox }}><div style={{}}><h1 style={quoteh1Style} className='quoteH1'>{third.name}</h1>< h3 style={quoteh3Style} className='quoteH3'>{third.title}</h3></div><div className='quoteDiv' >"{third.quote}"</div></animated.div>,
 ]
 
 export default function ClientBox() {
     const [index, set] = useState(0)
-    const onClick = useCallback(() => set(state => (state + 1) % 4), [])
+    const onClick = useCallback(() => set(state => (state + 1) % 3), [])
     const transitions = useTransition(index, p => p, {
         from: { opacity: 0, transform: 'translate3d(100%,0,0)', borderRadius: '5%', width: '100%' },
         enter: { opacity: 1, transform: 'translate3d(0%,0,0)', borderRadius: '0%', width: '100%', height: '100%' },

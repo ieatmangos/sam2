@@ -2,6 +2,7 @@
 import React, { useState, useEffect, Fragment, createRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useTrail, animated, useSpring } from 'react-spring'
+import { TweenMax, Power4 } from 'gsap'
 import './Header.css'
 import Fade from 'react-reveal'
 import hamburgermneu from '../../images/hamburgermneu.svg'
@@ -29,11 +30,13 @@ export default function Header() {
     }
 
 
-    const menuList = [<h3 onClick={() => handleRef('work')}>Work</h3>,
-    <h3 onClick={() => handleRef('team')}>Team</h3>,
-    // <h3 onClick={() => handleRef('blog')}>Blog</h3>,
-    <h3 onClick={() => handleRef('services')}>Services</h3>,
-    <h3 onClick={() => handleRef('contact')}>Contact</h3>]
+    const menuList = [
+        <h3 id='header-ani' onClick={() => handleRef('work')}>Work</h3>,
+        <h3 id='header-ani' onClick={() => handleRef('team')}>Team</h3>,
+        <h3 id='header-ani' onClick={() => handleRef('services')}>Services</h3>,
+        <h3 id='header-ani' onClick={() => handleRef('contact')}>Contact</h3>,
+        // <id='header-ani' h3 onClick={() => handleRef('blog')}>Blog</h3>,
+    ]
 
     const [toggle, set] = useState(false)
     const config = { mass: 5, tension: 2000, friction: 200 }
@@ -81,28 +84,33 @@ export default function Header() {
 
     const menuStyle = useSpring({
         opacity: toggle && Ypos < 5 ? 1 : 0,
-        transform: toggle && Ypos < 5 ? "translateX(0%)" : "translateX(100%"
+        transform: toggle && Ypos < 5 ? "translateY(0%)" : "translateY(-100%)",
+
     })
 
 
+    useEffect(() => {
+        TweenMax.staggerFrom("#header-ani", 2, { delay: 3, opacity: 0, stagger: { amount: 2 } })
+    }, [])
+
     return (
-        <Fragment>
-            <div className='header'>
-                <div className='head-left'> <h1>BUTIQ DIGITAL</h1>
+        <Fragment >
+            <div className='header' >
+                <div className='head-left' id='header-ani'> <h1>BUTIQ DIGITAL</h1>
                     <Fade right><div className='headercircle'></div></Fade>
                 </div>
                 <div className='head-right'>
                     {window.innerWidth > 1000 ?
                         <Fragment>
-                            <h3 onClick={() => handleRef('work')}>Work</h3>
-                            <h3 onClick={() => handleRef('team')}>Team</h3>
-                            <h3 onClick={() => handleRef('services')}>Services</h3>
+                            <h3 id='header-ani' onClick={() => handleRef('work')}>Work</h3>
+                            <h3 id='header-ani' onClick={() => handleRef('team')}>Team</h3>
+                            <h3 id='header-ani' onClick={() => handleRef('services')}>Services</h3>
                             {/* <h3 onClick={() => handleRef('blog')}>Blog</h3> */}
-                            <h3 onClick={() => handleRef('contact')}>Contact</h3>
+                            <h3 id='header-ani' onClick={() => handleRef('contact')}>Contact</h3>
                         </Fragment>
                         :
                         <animated.div onClick={() => set(state => !state)} style={hamburgerStyle}>
-                            <img style={{
+                            <img id='header-ani' style={{
                                 // display: 'absolute',
                                 width: '60%',
 
@@ -131,9 +139,11 @@ export default function Header() {
 
 
             </div>
-
             <animated.div style={menuStyle} className='menu-bg'></animated.div>
         </Fragment>
+
+
+
     )
 }
 

@@ -7,6 +7,7 @@
     padding: 0%;
     background: transparent;
     align-items: center;
+    overflow: hidden;
 }
 
 .head-right{
@@ -50,17 +51,17 @@ a {
 
 .menu-bg{
     width: 100vw;
-    height: 200vh;
+    height: 400vh;
   position: absolute;
   left: 0%;
   top: 0%;
   background: #49c5b6;
   z-index: 2;
 
-    
-   
-  
+}
 
+#header-ani:hover{
+color: #49c5b6
 }
 
 @media only screen and (max-width:800px){

@@ -8,6 +8,8 @@
 
 *{
   font-family: 'Work Sans', sans-serif;
+ 
+  cursor: url("./images/Mouse.png"), auto;
 
   line-height: 1.5em
 }

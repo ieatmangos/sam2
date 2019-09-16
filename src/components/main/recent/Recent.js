@@ -3,16 +3,16 @@ import Banner from '../banner/Banner'
 import { animated, useSpring } from 'react-spring'
 import Fade from 'react-reveal'
 // import './Recent.css'
-import image1 from '../../../images/Office_Leasing.jpg'
-import image2 from '../../../images/new images/new.jpg'
-import image3 from '../../../images/Luxury_Accomodation.jpg'
-import image4 from '../../../images/Luna&Rose_Jewelery.jpg'
-import image5 from '../../../images/LL_Wedding_Hire.jpg'
+import image1 from '../../../images/new images/Office_Leasing.JPG'
+import image2 from '../../../images/new images/Curry_Traders.JPG'
+import image3 from '../../../images/new images/Luxury_Accomodation.JPG'
+import image4 from '../../../images/new images/Luna&Rose.JPG'
+import image5 from '../../../images/new images/LL_Wedding_Hire.JPG'
 import image6 from '../../../images/new images/Jeffery_Construction.jpg'
-import image7 from '../../../images/Grounded_Packaging.jpg'
-import image8 from '../../../images/new images/Fenton_Building.jpg'
-import image9 from '../../../images/Bird_&_Kite.jpg'
-import image10 from '../../../images/new images/MedicalonMiami.jpg'
+import image7 from '../../../images/new images/Grounded_Packaging.JPG'
+import image8 from '../../../images/new images/Harcourts.jpeg'
+import image9 from '../../../images/new images/Bird&Kite.JPG'
+import image10 from '../../../images/new images/Original_Foods.JPG'
 
 
 
@@ -204,6 +204,7 @@ const Recent = () => {
     return (
         <div className='recent' id='work'>
             <Banner message={'Our Recent Work'} />
+            {window.innerWidth < 800 ? <div style={{ marginBottom: "15px", fontStyle: "italic" }}>Double tap on an image below to learn more.</div> : null}
             <Fade up cascade>
                 <div style={gridStyle}>
                     <div style={{ ...leftStyle, backgroundImage: `url(${image7})` }} onMouseOver={() => setSeventh(true)} onMouseLeave={() => setSeventh(false)} onClick={() => setSeventh(!seventh)}>
@@ -229,9 +230,9 @@ const Recent = () => {
                     <div style={{ ...leftStyle, backgroundImage: `url(${image8})`, backgroundPosition: "100% 50%" }} onMouseOver={() => setEighth(true)} onMouseLeave={() => setEighth(false)} onClick={() => setEighth(!eighth)}>
                         <animated.div style={{ ...eighthFade, background: '#93babc', }}>
                             <div style={{ ...allText }}>
-                                <h1 style={{ h1Style }}>Fenton Building</h1>
-                                <p style={{ pStyle }}>Generating customer leads and enquiry from an audience specifically looking for high end building and renovations in Tauranga. </p>
-                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns, Search Engine Optimisation</h3>
+                                <h1 style={{ h1Style }}>Harcourts</h1>
+                                <p style={{ pStyle }}>Helping Harcourts present a consistent brand message via their email communication, company brochures and promotional material, social media, branding and design. </p>
+                                <h3 style={{ h3Style }}>Design & Branding, Email Marketing</h3>
                             </div>
                         </animated.div>
                     </div>
@@ -241,7 +242,7 @@ const Recent = () => {
                                 <h1 style={{ h1Style }}>Luna & Rose Jewelery</h1>
                                 <p style={{ pStyle }}>Driving brand awareness, increasing online conversions and e-commerce efficiency as well as creating an authentic and visually appealing brand in a competitive market.
                                 </p>
-                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns, Email Marketing, Branding & Design, Search Engine Optimisation</h3>
+                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns, Email Marketing, Branding & Design</h3>
                             </div>
                         </animated.div>
                     </div>
@@ -279,9 +280,9 @@ const Recent = () => {
                     <div style={{ ...rightStyle, backgroundImage: `url(${image10})` }} onMouseOver={() => setTenth(true)} onMouseLeave={() => setTenth(false)} onClick={() => setTenth(!tenth)}>
                         <animated.div style={{ ...tenthFade, background: '#f2e055', }}>
                             <div style={{ ...allText }}>
-                                <h1 style={{ h1Style }}>Medical on Miami Medical Centre.</h1>
-                                <p style={{ pStyle, h1Style }}>Raising brand awareness in the local community, driving new customer acquisition and increasing online conversions.</p>
-                                <h3 style={{ h3Style }}>Paid Search & Social Campaigns</h3>
+                                <h1 style={{ h1Style }}>Original Foods</h1>
+                                <p style={{ pStyle, h1Style }}>Working with Original Foods on their digital marketing strategy to launch their brand.</p>
+                                <h3 style={{ h3Style }}> Designing & creating email templates, email marketing & social media.</h3>
                             </div>
                         </animated.div>
                     </div>

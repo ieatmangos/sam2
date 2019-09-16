@@ -21,7 +21,7 @@ export class Main extends Component {
         return (
             <div className='main'>
                 <Jumbo />
-                <Banner message={'What We Do'} />
+                <Banner id={"ani"} message={'What We Do'} />
                 {/* <Fade up> */}
                 <WhatWeDo />
                 {/* </Fade> */}
@@ -33,7 +33,7 @@ export class Main extends Component {
                 <Recent />
                 <Clients />
                 <Team />
-                <Fade up><Contact /></Fade>
+                <Fade><Contact /></Fade>
                 {/* <Opinions /> */}
             </div>
         )
