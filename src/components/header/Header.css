@@ -86,4 +86,7 @@ color: #49c5b6
         font-size: .5em;
         bottom: 0px;
     }
+    #header-ani:hover{
+        color: white
+        }
 }

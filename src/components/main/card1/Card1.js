@@ -8,7 +8,7 @@ export class Card1 extends Component {
                 <Fade >
                     <div className='card1-left'>
                         <h1 style={{ fontWeight: '700' }}>Digital Marketing & Strategy</h1>
-                        <p style={{ fontWeight: '300' }}>We specialise in creating tailored digital marketing strategies & solutions that grow brand awareness, customer acquisition and growth to drive return on investment for you're business. </p>
+                        <p style={{ fontWeight: '300' }}>We specialise in creating tailored digital marketing strategies & solutions that grow brand awareness, customer acquisition and growth to drive return on investment for your business. </p>
                         {/* <h3>L</h3> */}
                     </div>
                 </Fade>
