@@ -49,7 +49,7 @@ export default function Footer() {
                 className='footer-left'
                 style={{ ...leftStyle }}
             >
-                <p className='footer-left-p'>Boutiq Digital</p>
+                <p className='footer-left-p'>Butiq Digital</p>
                 <p className='footer-left-p'>+64 98890802</p>
                 <p className='footer-left-p'>hello@boutiqdigital.com</p>
             </animated.div>
