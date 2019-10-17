@@ -51,7 +51,7 @@ export default function Footer() {
             >
                 <p className='footer-left-p'>Butiq Digital</p>
                 <p className='footer-left-p'>+64 98890802</p>
-                <p className='footer-left-p'>hello@boutiqdigital.com</p>
+                <p className='footer-left-p'>hello@butiqdigital.com</p>
             </animated.div>
 
             <animated.div
